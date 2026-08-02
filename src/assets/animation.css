@@ -1,0 +1,71 @@
+/* ===========================================
+   animation.css
+   Slide-from-left / slide-out-left animations
+   =========================================== */
+
+:root {
+  --anim-slide-distance: 120px;
+  --anim-slide-duration: 1s;
+  --anim-slide-ease: ease;
+}
+
+/* ---- Keyframes ---- */
+@keyframes entryLeft {
+  from {
+    transform: translateX(calc(var(--anim-slide-distance) * -1));
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes exitLeft {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(calc(var(--anim-slide-distance) * -1));
+    opacity: 0;
+  }
+}
+
+/* ---- Vue <Transition name="slide-left"> hooks ---- */
+@layer components {
+  .slide-left-enter-active {
+    animation: entryLeft var(--anim-slide-duration) var(--anim-slide-ease) forwards;
+  }
+
+  .slide-left-leave-active {
+    animation: exitLeft var(--anim-slide-duration) var(--anim-slide-ease) forwards;
+  }
+}
+
+/* ---- Reduced motion support ---- */
+@media (prefers-reduced-motion: reduce) {
+  .slide-left-enter-active,
+  .slide-left-leave-active {
+    animation-duration: 0.01ms !important;
+  }
+}
+
+@keyframes floatA {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  33%       { transform: translate(18px, -22px) rotate(120deg); }
+  66%       { transform: translate(-12px, 14px) rotate(240deg); }
+}
+@keyframes floatB {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%      { transform: translate(-20px, 18px) rotate(180deg); }
+}
+@keyframes floatC {
+  0%, 100% { transform: translate(0, 0); }
+  25%      { transform: translate(14px, 10px); }
+  75%      { transform: translate(-10px, -14px); }
+}
+
+.shape-float-a { animation: floatA 7s ease-in-out infinite; }
+.shape-float-b { animation: floatB 9s ease-in-out infinite; }
+.shape-float-c { animation: floatC 6s ease-in-out infinite; }

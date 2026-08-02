@@ -1,0 +1,801 @@
+{
+    "brand": {
+        "name": "OutSource Cube",
+        "logoAlt": "OutSource Cube Logo"
+    },
+    "hero": {
+        "badge": "HIPAA-COMPLIANT ABA OPERATIONS SPECIALISTS",
+        "headline": {
+            "accent": "Trusted ABA Therapy",
+            "outline": "Operations Partner."
+        },
+        "introStrong": "More time for therapy",
+        "intro": "let our experienced ABA administrative team handle scheduling, billing, client intake, and operational support so your clinic can thrive.",
+        "conversection" : "Start a Conversation",
+        "services" : "Explore Services",
+        "ticker": [
+            "Administrative Support",
+            "ABA Scheduling",
+            "Insurance Billing",
+            "Patient Communication",
+            "Payroll & HR Support",
+            "Marketing & Growth Support"
+        ]
+    },
+    "serviceOverview": {
+        "badge": "WHAT WE SOLVE",
+        "title": "The challenges slowing your business down",
+        "description": "Every growing business faces operational bottlenecks. We provide dedicated solutions that improve efficiency, increase visibility, and support sustainable growth.",
+        "cards": [
+            {
+                "title": "ABA Administrative & Operations",
+                "image": "/strategic-talent.jpg",
+                "description": "Keep your practice running efficiently with dedicated administrative support, including scheduling, documentation, insurance coordination, client communication, and day-to-day operational management.",
+                "icon": "Handshake",
+                "iconClass": "bg-brand/10 text-brand"
+            },
+            {
+                "title": "Social Media Management & Strategy",
+                "image": "/hr-excellence.webp",
+                "description": "Strengthen your online presence with strategic content, social media management, audience engagement, and brand-focused campaigns that build trust and long-term growth.",
+                "icon": "BadgeCheck",
+                "iconClass": "bg-coral/10 text-coral"
+            },
+            {
+                "title": "Digital Marketing & Ads",
+                "image": "/tailored-engagement.png",
+                "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
+                "icon": "BadgeCheck",
+                "iconClass": "bg-mint/45 text-brand-deep    "
+            }
+        ]
+    },
+    "whyUs": {
+        "backgroundWord": "WHY",
+        "eyebrow": "WHY CHOOSE US",
+        "title": "Overwhelmed by Administrative Tasks? Focus on Care, We'll Handle the Rest.",
+        "description": "Running an ABA practice means balancing client care with endless administrative responsibilities. From scheduling and insurance coordination to documentation and daily operations, these tasks can slow growth and overwhelm your team. Outsource Cube becomes your trusted administrative partner, delivering reliable, HIPAA-compliant support that streamlines operations, reduces costs, and gives your staff more time to focus on what matters most.",
+        "imageAlt": "Outsource Cube as Your ABA Administrative Partner",
+        "features": [
+            {
+                "title": "ABA Industry Expertise",
+                "icon": "CheckCircle"
+            },
+            {
+                "title": "HIPAA-Compliant Processes",
+                "icon": "LockKeyhole"
+            },
+            {
+                "title": "Cost-Effective Solutions",
+                "icon": "WalletCards"
+            },
+            {
+                "title": "Dedicated Support Team",
+                "icon": "UsersRound"
+            },
+            {
+                "title": "Scalable Growth Support",
+                "icon": "IdCardLanyard"
+            }
+        ]
+    },
+    "about": {
+        "badge": "ABOUT US",
+        "title": "More Than an Outsourcing Company - A Partner in Your Growth",
+        "description": "Success isn't just about having more resources, it's about having the right support. At Outsource Cube, we provide dedicated administrative operations, digital marketing, and business support solutions that simplify everyday challenges. From optimizing workflows and managing back-office operations to building your online presence, we help businesses operate more efficiently, scale confidently, and achieve sustainable growth.",
+        "imageAlt": "OUTSOURCE CUBE IS MORE THAN JUST AN ADMINISTRATIVE SUPPORT PROVIDER"
+    },
+    "expertise": {
+        "badge": "AREAS OF EXPERTISE",
+        "title": "Comprehensive Support for Every Stage of Your ABA Practice",
+        "description": "From client onboarding to revenue management, Outsource Cube delivers reliable administrative solutions that improve efficiency, reduce operational burdens, and help your practice grow with confidence.",
+        "imageAlt": "Specialized ABA Administrative Solutions",
+        "items": [
+            {
+                "id": 1,
+                "title": "ABA SCHEDULING & CALENDAR MANAGEMENT",
+                "description": "Ensure seamless coordination between therapists, clients, and families with accurate scheduling and appointment management.",
+                "icon": "Users",
+                "side": "left",
+                "arcX": 0
+            },
+            {
+                "id": 2,
+                "title": "INSURANCE BILLING & CLAIMS MANAGEMENT",
+                "description": "Improve cash flow with clean claim submissions, payment posting, and revenue cycle support.",
+                "icon": "ChartLine",
+                "side": "left",
+                "arcX": -36
+            },
+            {
+                "id": 3,
+                "title": "INSURANCE VERIFICATION & AUTHORIZATIONS",
+                "description": "Verify benefits, track authorizations, and ensure service approvals are in place before therapy begins.",
+                "icon": "Palette",
+                "side": "left",
+                "arcX": -54
+            },
+            {
+                "id": 4,
+                "title": "CLIENT INTAKE & ONBOARDING",
+                "description": "Create a smooth onboarding experience by managing inquiries, collecting documents, and coordinating new client setup.",
+                "icon": "ShoppingBag",
+                "side": "left",
+                "arcX": -30
+            },
+            {
+                "id": 5,
+                "title": "CLIENT & FAMILY COMMUNICATION",
+                "description": "Maintain strong relationships with families through appointment reminders, follow-ups, and ongoing administrative support.",
+                "icon": "Heart",
+                "side": "right",
+                "arcX": 0
+            },
+            {
+                "id": 6,
+                "title": "PAYROLL & HR ADMINISTRATION",
+                "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR documentation.",
+                "icon": "Cog",
+                "side": "right",
+                "arcX": 36
+            },
+            {
+                "id": 7,
+                "title": "REVENUE CYCLE MANAGEMENT (RCM)",
+                "description": "Optimize collections, reduce outstanding balances, and improve financial performance through proactive account management.",
+                "icon": "Wrench",
+                "side": "right",
+                "arcX": 54
+            },
+            {
+                "id": 8,
+                "title": "ADMINISTRATIVE & BACK-OFFICE SUPPORT",
+                "description": "Handle daily operational tasks, documentation updates, reporting, data entry, and workflow coordination with ease.",
+                "icon": "PlusCircle",
+                "side": "right",
+                "arcX": 30
+            }
+        ]
+    },
+    "footer": {
+        "description": "The Operations Partner for ABA Practices",
+        "socialMedia": {
+            "title":"Connect with us",
+            "list": [
+                {
+                    "icon": "Facebook_Icon.png",
+                    "label": "Facebook",
+                    "path": "https://outsourcecube.com/"
+                },
+                {
+                    "icon": "Linkedin_Icon.png",
+                    "label": "LinkedIn",
+                    "path": "https://outsourcecube.com/"
+                },
+                {
+                    "icon": "Instagram_ Icon.png",
+                    "label": "Instagram",
+                    "path": "https://outsourcecube.com/"
+                },
+                {
+                    "icon": "X_Icon.png",
+                    "label": "Twitter",
+                    "path": "https://outsourcecube.com/"
+                }
+            ]
+        },
+        "allRightsReserved" : "OutSource Cube. All rights reserved."
+    },
+    "pages": {
+        "hipaaCompliance": {
+            "badge": "HIPAA-aware support",
+            "title": "Protect Patient Privacy Without Slowing Your Operations",
+            "intro": "Outsource Cube supports ABA practices with privacy-conscious administrative workflows designed for sensitive healthcare operations.",
+            "bannerImg": "hipaa-compliant Page Icon.png",
+            "eyebrow": "Operational safeguards",
+            "heading": "Built for ABA teams that handle sensitive client information.",
+            "description": "We align our administrative support with HIPAA-aware practices, client-approved procedures, and clear accountability. Formal compliance obligations are defined in the applicable service agreement and business associate agreement when required.",
+            "safeguards": [
+                {
+                    "icon": "LockKeyhole",
+                    "title": "Access Controls",
+                    "text": "Role-aware access practices help limit information exposure to team members who need it for assigned work."
+                },
+                {
+                    "icon": "FileCheck",
+                    "title": "Documentation Discipline",
+                    "text": "Operational workflows support accurate record handling, status tracking, and client-approved process documentation."
+                },
+                {
+                    "icon": "UsersRound",
+                    "title": "Team Training",
+                    "text": "Support staff follow privacy-aware handling expectations for ABA scheduling, intake, billing, and back-office tasks."
+                },
+                {
+                    "icon": "ShieldCheck",
+                    "title": "Minimum Necessary",
+                    "text": "Processes are designed around using only the information needed to complete authorized administrative support."
+                }
+            ],
+            "process": {
+                "eyebrow": "How onboarding works",
+                "heading": "Clear setup before protected workflows begin.",
+                "steps": [
+                    "Confirm the services, data types, and responsibilities covered by the engagement.",
+                    "Set up approved communication channels and access permissions.",
+                    "Document workflows for scheduling, intake, billing, authorizations, and reporting.",
+                    "Review operations regularly so safeguards stay aligned with clinic needs."
+                ]
+            }
+        },
+        "privacyPolicy": {
+            "badge": "Privacy",
+            "title": "Privacy Policy",
+            "intro": "How Outsource Cube collects, uses, and protects information connected with our website and ABA administrative support services.",
+            "updated": "June 8, 2026",
+            "contactLabel": "Contact us",
+            "sections": [
+                {
+                    "title": "Information We Collect",
+                    "body": "We may collect contact details, organization information, service inquiries, scheduling details, billing-related administrative information, and website usage data when you interact with Outsource Cube."
+                },
+                {
+                    "title": "How We Use Information",
+                    "body": "We use information to respond to inquiries, provide ABA administrative support, coordinate services, improve our website, maintain records, and communicate about relevant operational support."
+                },
+                {
+                    "title": "Protected Health Information",
+                    "body": "When we support covered entities or business associates, protected health information is handled according to applicable agreements, HIPAA-related safeguards, and the minimum necessary standard."
+                },
+                {
+                    "title": "Sharing Information",
+                    "body": "We do not sell personal information. We may share information with service providers, professional advisors, or as required to deliver contracted services, comply with law, or protect our rights."
+                },
+                {
+                    "title": "Security",
+                    "body": "We use administrative, technical, and organizational safeguards designed to reduce unauthorized access, misuse, loss, or disclosure of information."
+                },
+                {
+                    "title": "Your Choices",
+                    "body": "You may contact us to request updates, corrections, or deletion of personal information where legally and contractually permitted."
+                }
+            ],
+            "notice": "This page is general website information and should be reviewed with qualified legal or compliance counsel before use as a final policy."
+        },
+        "termsConditions": {
+            "badge": "Terms",
+            "title": "Terms & Conditions",
+            "intro": "The basic terms that apply when you use the Outsource Cube website and review information about our services.",
+            "updated": "June 8, 2026",
+            "contactLabel": "Contact us",
+            "sections": [
+                {
+                    "title": "Use of This Website",
+                    "body": "You may use this website for lawful business and informational purposes. You agree not to disrupt the website, misuse its content, or attempt unauthorized access to systems or data."
+                },
+                {
+                    "title": "Services",
+                    "body": "Service descriptions are provided for general information. Specific scope, pricing, responsibilities, compliance obligations, and deliverables are governed by a separate written agreement."
+                },
+                {
+                    "title": "No Professional Advice",
+                    "body": "Website content is not legal, medical, billing, or compliance advice. You should consult qualified professionals for guidance specific to your organization."
+                },
+                {
+                    "title": "Client Responsibilities",
+                    "body": "Clients are responsible for providing accurate information, maintaining required authorizations, and ensuring their use of outsourced support complies with applicable laws and contracts."
+                },
+                {
+                    "title": "Intellectual Property",
+                    "body": "Website content, branding, layout, and materials are owned by or licensed to Outsource Cube and may not be copied or reused without permission."
+                },
+                {
+                    "title": "Limitation of Liability",
+                    "body": "To the fullest extent permitted by law, Outsource Cube is not liable for indirect, incidental, or consequential damages arising from website use."
+                }
+            ],
+            "notice": "This page is general website information and should be reviewed with qualified legal or compliance counsel before use as a final policy."
+        },
+        "service": {
+            "abaAdministrativeOperations": {
+                "badge": "ABA ADMINISTRATIVE & OPERATIONS",
+                "title": "Reliable Administrative Support for ABA Practices",
+                "intro": "Streamlining operations, reducing administrative burdens, and helping your team focus on delivering exceptional client care.",
+                "bannerImg": "ABA_Administrative_page_banner.png",
+                "whyitMatters": {
+                    "badge": "Why ABA Administration Matters",
+                    "heading": "Growing your practice shouldn't mean growing your administrative burden.",
+                    "paragraph1": "As your ABA practice expands, so do the demands of scheduling, documentation, insurance coordination, client communication, and back-office operations. Managing these responsibilities internally can overwhelm your team, increase operational costs, and reduce the time available for client care.",
+                    "paragraph2": "Outsource Cube provides experienced administrative professionals who become a seamless extension of your practice, ensuring every process runs efficiently and accurately."
+                },
+                "whatWeOffer": {
+                    "badge": "What We Offer",
+                    "heading": "Complete ABA administrative & operational support",
+                    "cards": [
+                        {
+                            "icon": "Box",
+                            "title": "Client Scheduling & Calendar Management",
+                            "description": "Coordinate appointments, therapist schedules, cancellations, and rescheduling to keep your practice running smoothly."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Client Intake & Onboarding",
+                            "description": "Manage inquiries, collect documentation, coordinate assessments, and create a seamless onboarding experience for new families."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Insurance Verification & Authorisations",
+                            "description": "Verify insurance eligibility, obtain authorisations, and ensure services are approved before treatment begins."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Insurance Billing & Claims Support",
+                            "description": "Assist with claim submissions, payment posting, denial follow-ups, and billing workflows to improve reimbursement efficiency."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Client & Family Communication",
+                            "description": "Provide professional communication, appointment reminders, follow-ups, and administrative coordination to enhance the client experience."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Payroll & HR Administration",
+                            "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR administrative tasks."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Revenue Cycle Management",
+                            "description": "Strengthen financial performance through account follow-ups, collections support, payment tracking, and revenue optimisation."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Administrative & Back-Office Support",
+                            "description": "Handle documentation, reporting, data entry, workflow coordination, and day-to-day operational tasks that keep your practice organised."
+                        }
+                    ]
+                },
+                "whyChooseUs": {
+                    "badge": "Why Choose Outsource Cube",
+                    "heading": "Dedicated support that feels like part of your team",
+                    "paragraph": "We don't just complete tasks — we become an extension of your practice. Our experienced administrative professionals integrate with your existing workflows, helping your team stay organised, responsive, and focused on delivering exceptional care.",
+                    "cards": [
+                        "Experienced ABA Administrative Professionals",
+                        "HIPAA-Aware Administrative Workflows",
+                        "Improved Scheduling & Operational Efficiency",
+                        "Reduced Administrative Workload",
+                        "Scalable Support for Growing Practices",
+                        "Reliable Communication & Ongoing Coordination"
+                    ]
+                },
+                "processWithSteps": {
+                    "badge": "Our Approach",
+                    "heading": "Simple process. Reliable support. Lasting results.",
+                    "steps": [
+                        {
+                            "number": "01",
+                            "title": "Discover",
+                            "description": "We learn about your practice, workflows, and operational challenges."
+                        },
+                        {
+                            "number": "02",
+                            "title": "Plan",
+                            "description": "Develop a customised support plan tailored to your team's needs."
+                        },
+                        {
+                            "number": "03",
+                            "title": "Integrate",
+                            "description": "Our administrative specialists become part of your daily operations."
+                        },
+                        {
+                            "number": "04",
+                            "title": "Support",
+                            "description": "Manage essential administrative tasks with accuracy and consistency."
+                        },
+                        {
+                            "number": "05",
+                            "title": "Optimise",
+                            "description": "Continuously improve workflows to increase efficiency as your practice grows."
+                        }
+                    ]
+                },
+                "callToAction": {
+                    "title": "Spend less time managing operations. More time changing lives",
+                    "intro": "Partner with Outsource Cube for dependable ABA administrative support that keeps your practice organised, efficient, and ready to grow.",
+                    "button": {
+                        "label": "Schedule a Free Consultation",
+                        "link": "https://outsourcecube.com/",
+                        "icon": "ArrowRight"
+                    }
+                }
+            },
+            "digitalMarketing": {
+                "badge": "Digital Marketing",
+                "title": "Drive More Leads. Grow Your Business.",
+                "intro": "Performance-driven marketing campaigns that increase visibility, generate qualified leads, and maximize your ROI.",
+                "bannerImg": "Digital_Marketing_page_banner_2.png",
+                "whyitMatters": {
+                    "badge": "Why Digital Marketing?",
+                    "heading": "Your customers are searching. Make sure they find you first.",
+                    "paragraph1": "Having a website isn't enough. Without the right digital marketing strategy, your business can miss valuable opportunities.",
+                    "paragraph2": "We help you increase your online visibility, attract the right audience, and convert visitors into loyal customers through targeted marketing campaigns."
+                },
+                "whatWeOffer": {
+                    "badge": "What We Offer",
+                    "heading": "Complete digital marketing solutions",
+                    "cards": [
+                        {
+                            "icon": "Box",
+                            "title": "Search Engine Optimisation (SEO)",
+                            "description":"Improve your search rankings and attract organic traffic with a strategy designed for long-term growth."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Google Ads (PPC)",
+                            "description":"Reach high-intent customers through targeted Google Ads campaigns that maximise your return on investment."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Meta Ads",
+                            "description":"Create engaging Facebook and Instagram advertising campaigns that drive awareness, leads, and conversions."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Email Marketing",
+                            "description":"Build stronger customer relationships with personalised email campaigns that nurture leads and increase retention."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Content Marketing",
+                            "description":"Create valuable content that educates your audience, builds trust, and positions your brand as an industry leader."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Content Marketing",
+                            "description":"Track campaign performance with detailed insights and continuous optimisation for better results."
+                        }
+                    ]
+                },
+                "whyChooseUs": {
+                    "badge": "Why Choose Us",
+                    "heading": "Marketing that delivers measurable results",
+                    "paragraph": "Every campaign is built around your business goals — not guesswork. We combine strategy, creativity, and data to help you attract more customers, improve engagement, and maximise every marketing opportunity.",
+                    "cards": [
+                        "Custom Marketing Strategies",
+                        "Google & Meta Certified Best Practices",
+                        "ROI-Focused Campaign Management",
+                        "Transparent Performance Reporting",
+                        "Continuous Campaign Optimisation",
+                        "Dedicated Marketing Specialists"
+                    ]
+                },
+                "processWithSteps": {
+                    "badge": "Our Process",
+                    "heading": "A strategic approach to sustainable growth",
+                    "steps": [
+                        {
+                            "number": "01",
+                            "title": "Discover",
+                            "description": "We understand your business, audience, and objectives."
+                        },
+                        {
+                            "number": "02",
+                            "title": "Plan",
+                            "description": "Develop a customised digital marketing strategy."
+                        },
+                        {
+                            "number": "03",
+                            "title": "Launch",
+                            "description": "Execute campaigns across the right digital channels."
+                        },
+                        {
+                            "number": "04",
+                            "title": "Optimise",
+                            "description": "Monitor performance and improve results continuously."
+                        },
+                        {
+                            "number": "05",
+                            "title": "Grow",
+                            "description": "Scale successful campaigns to maximise business growth."
+                        }
+                    ]
+                },
+                "callToAction": {
+                    "title": "Ready to turn marketing into measurable growth?",
+                    "intro": "Let's create a digital marketing strategy that attracts the right audience, increases conversions, and helps your business achieve long-term success.",
+                    "button": {
+                        "label": "Schedule a Free Consultation",
+                        "link": "https://outsourcecube.com/",
+                        "icon": "ArrowRight"
+                    }
+                }
+            },
+            "websiteDevelopment": {
+                "badge": "Website Development",
+                "title": "Websites Built to Grow Your Business",
+                "intro": "Modern, responsive, and SEO-friendly websites designed to convert visitors into customers.",
+                "bannerImg": "Website_Development_Page_Banner.png",
+                "whyitMatters": {
+                    "badge": "Why Your Website Matters",
+                    "heading": "Your website should generate opportunities, not hold you back.",
+                    "paragraph1": "An outdated website, slow loading speeds, and poor user experience can drive potential customers away.",
+                    "paragraph2": "We build and manage high-performing websites that strengthen your brand, improve customer experience, and help convert visitors into loyal clients."
+                },
+                "whatWeOffer": {
+                    "badge": "What We Offer",
+                    "heading": "Complete website development & management solutions",
+                    "cards": [
+                        {
+                            "icon": "Box",
+                            "title": "Custom Website Design & Development",
+                            "description": "Create modern, responsive websites tailored to your brand and business objectives."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "WordPress Development",
+                            "description": "Build flexible, easy-to-manage WordPress websites with custom functionality and intuitive content management."
+                        },
+
+                        {
+                            "icon": "Box",
+                            "title": "E-commerce Website Development",
+                            "description": "Develop secure online stores that deliver seamless shopping experiences and drive sales."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Website Maintenance & Support",
+                            "description": "Keep your website updated, secure, and performing at its best with ongoing maintenance and technical support."
+                        },
+
+                        {
+                            "icon": "Box",
+                            "title": "Website Performance & SEO Optimisation",
+                            "description": "Improve loading speed, search engine visibility, and user experience to maximise website performance."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Hosting, Security & Backup Management",
+                            "description": "Protect your website with reliable hosting, SSL security, regular backups, and proactive monitoring."
+                        }
+                    ]
+                },
+                "whyChooseUs": {
+                    "badge": "Why Choose Us",
+                    "heading": "Websites built for performance, security & growth",
+                    "paragraph": "We don't just build websites — we create digital experiences that help businesses establish credibility, engage visitors, and achieve measurable results.",
+                    "cards": [
+                        "Responsive & Mobile-Friendly Design",
+                        "SEO-Optimised Structure",
+                        "Fast Loading Performance",
+                        "Secure & Reliable Websites",
+                        "Ongoing Maintenance & Technical Support",
+                        "Scalable Solutions for Future Growth"
+                    ]
+                },
+                "processWithSteps": {
+                    "badge": "How It Works",
+                    "heading": "Launch your blog in 4 easy steps",
+                    "steps": [
+                        {
+                            "number": "01",
+                            "title": "Discover",
+                            "description": "We understand your business, goals, and audience."
+                        },
+                        {
+                            "number": "02",
+                            "title": "Design",
+                            "description": "Create a modern, user-friendly experience tailored to your brand."
+                        },
+                        {
+                            "number": "03",
+                            "title": "Develop",
+                            "description": "Build a secure, responsive, and high-performing website."
+                        },
+                        {
+                            "number": "04",
+                            "title": "Launch",
+                            "description": "Test every detail and deploy your website with confidence."
+                        },
+                        {
+                            "number": "05",
+                            "title": "Support",
+                            "description": "Provide continuous updates, maintenance, and optimisation to keep your website performing at its best."
+                        }
+                    ]
+                },
+                "callToAction": {
+                    "title": "Ready to build a website that drives results?",
+                    "intro": "Whether you're launching a new website or improving an existing one, we'll create a digital experience that helps your business stand out and grow with confidence.",
+                    "button": {
+                        "label": "Start Your Website Project",
+                        "link": "https://outsourcecube.com/",
+                        "icon": "ArrowRight"
+                    }
+                }
+            },
+            "socialMediaManagement": {
+                "badge": "Social Media Management",
+                "title": "Turn Your Online Presence Into Your Strongest Marketing Asset",
+                "intro": "Your audience is already online, make sure they find the right impression. We create strategic, engaging, and consistent social media experiences that build trust, increase visibility, and help your business connect with the people who matter most.",
+                "bannerImg": "Social_Media_page_banner.png",
+                "whyitMatters": {
+                        "badge": "Why Social Media Matters",
+                        "heading": "Being present isn't enough — you need a strategy.",
+                        "paragraph1": "Many businesses struggle to maintain a consistent online presence while managing daily operations. Irregular posting, low engagement, and unclear messaging can make it difficult to build credibility and attract new clients.",
+                        "paragraph2": "At Outsource Cube, we transform your social media into a powerful marketing channel that strengthens your brand, builds meaningful relationships, and supports long-term business growth."
+                },
+                "whatWeOffer": {
+                    "badge": "What We Offer",
+                    "heading": "Complete social media management solutions",
+                    "cards": [
+                        {
+                            "icon": "Box",
+                            "title": "Content Strategy & Planning",
+                            "description": "Develop a customised content strategy aligned with your brand, business goals, and target audience."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Creative Content Design",
+                            "description": "Eye-catching graphics, professional visuals, and branded content designed to capture attention."
+                        },
+
+                        {
+                            "icon": "Box",
+                            "title": "Content Creation & Copywriting",
+                            "description": "Informative, engaging, and conversion-focused content tailored to your audience."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Social Media Management",
+                            "description": "Consistent publishing, profile optimisation, and platform management across your social channels."
+                        },
+
+                        {
+                            "icon": "Box",
+                            "title": "Community Engagement",
+                            "description": "Respond to comments, messages, and audience interactions to strengthen customer relationships."
+                        },
+                        {
+                            "icon": "Box",
+                            "title": "Performance Reporting",
+                            "description": "Track growth, engagement, and campaign performance with actionable insights."
+                        }
+                    ]
+                },
+                "whyChooseUs": {
+                    "badge": "Why Choose Outsource Cube",
+                    "heading": "More than social media management — a growth partner",
+                    "paragraph": "We don't just publish posts. We create strategies that help businesses build credibility, increase engagement, and turn followers into loyal customers.",
+                    "cards": [
+                            "Consistent Brand Presence",
+                            "Professional Content Creation",
+                            "Audience Engagement",
+                            "Data-Driven Strategy",
+                            "Performance Monitoring",
+                            "Dedicated Marketing Support"
+                        ]
+                },
+                "processWithSteps": {
+                    "badge": "Our Process",
+                    "heading": "A simple process. Meaningful results.",
+                    "steps": [
+                        {
+                            "number": "01",
+                            "title": "Discover",
+                            "description": "We learn about your business, audience, and goals."
+                        },
+                        {
+                            "number": "02",
+                            "title": "Plan",
+                            "description": "Create a customised social media strategy and content calendar."
+                        },
+                        {
+                            "number": "03",
+                            "title": "Create",
+                            "description": "Design engaging content that reflects your brand."
+                        },
+                        {
+                            "number": "04",
+                            "title": "Manage",
+                            "description": "Publish, monitor, and engage with your audience consistently."
+                        },
+                        {
+                            "number": "05",
+                            "title": "Optimise",
+                            "description": "Analyse performance and continuously improve results."
+                        }
+                    ]
+                },
+                "whoWeWorkWith" : {
+                    "badge": "Who We Work With",
+                    "heading": "Helping businesses build stronger digital brands",
+                    "paragraph": "Whether you are an ABA therapy practice, healthcare provider, startup, professional service, or growing business, we create social media strategies that help you stand out in a competitive marketplace.",
+                    "cards": [
+                        {
+                            "number": "01",
+                            "heading": "ABA Therapy Practices",
+                            "paragraph": "Build trust with families through consistent, clear, and professional digital communication."
+                        },
+                        {
+                            "number": "02",
+                            "heading": "Healthcare Providers",
+                            "paragraph": "Share helpful, credible content that improves visibility and strengthens patient confidence."
+                        },
+                        {
+                            "number": "03",
+                            "heading": "Startups",
+                            "paragraph": "Launch with a focused brand presence that attracts attention and explains your value clearly."
+                        },
+                        {
+                            "number": "04",
+                            "heading": "Professional Services & Growing Businesses",
+                            "paragraph": "Create a polished online identity that supports growth, reputation, and long-term customer trust."
+                        }
+                    ]
+                },
+                "callToAction": {
+                    "title": "Your audience is scrolling every day. Make every post count.",
+                    "intro": "Build stronger relationships, increase your visibility, and create a social media presence that truly represents your brand.",
+                    "button": {
+                        "label": "Schedule a Free Consultation",
+                        "link": "https://outsourcecube.com/",
+                        "icon": "ArrowRight"
+                    }
+                }
+            }
+        },
+        "contactUs": {
+            "heading": {
+                "badge": "CONTACT US",
+                "title": "Your Challenges Deserve More Than Temporary Solutions.",
+                "intro": "Whether you're overwhelmed with administrative tasks, looking to generate more leads, or ready to build a stronger online presence, our team is here to provide the expertise and support you need to move forward.",
+                "bannerImg": "Contact_Us.png"
+            },
+            "badge": "CONTACT OUTSOURCE CUBE",
+            "title": "Let's Build Smarter Business Solutions Together",
+            "description": "From streamlining operations to accelerating your digital growth, Outsource Cube provides dedicated solutions designed around your business. Reach out today, and let's discuss how we can help you save time, reduce costs, and scale with confidence.",
+            "form": {
+                "fields": {
+                    "firstname": "First Name",
+                    "lastname": "Last Name",
+                    "email": "Work Email",
+                    "projectType": "What do you need help with?",
+                    "message": "Message",
+                    "serviceOptions": [
+                        "ABA Scheduling",
+                        "Insurance Billing",
+                        "Intake Coordination",
+                        "Back-Office Support",
+                        "HIPAA-Compliant Operations"
+                    ],
+                    "sendButton": "Send Message"
+                }
+            },
+            "cards": [
+                {
+                    "icon": "MapPin",
+                    "label": "Office",
+                    "value": "4th Floor, 412/A, Block-C, Rajyash Rise Beside Vishala, Near APMC Market Rajyash City, South Vasna Ahmedabad – 380007, Gujarat, India"
+                },
+                {
+                    "icon": "Mail",
+                    "label": "Email",
+                    "value": "info@outsourcecube.com" 
+                },
+                {
+                    "icon": "Phone",
+                    "label": "Phone",
+                    "value": "+91 (873) 394-6139"
+                }
+            ],
+            "callToAction": {
+                "title": "Let's Create Something Meaningful Together!",
+                "intro": "Whether you're solving today's challenges or planning for tomorrow's opportunities, we're ready to support your journey.",
+                "button": {
+                    "label": "Start Your Journey",
+                    "link": "https://outsourcecube.com/",
+                    "icon": "ArrowRight"
+                }
+            }
+        }
+    }
+}
