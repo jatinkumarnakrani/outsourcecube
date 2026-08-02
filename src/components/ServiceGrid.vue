@@ -1,46 +1,50 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useWebsiteStore } from "@/stores/website";
-import BrandMan from "/images/Brand_Men Without_BG_V1.png";
 import * as LucideIcons from '@lucide/vue';
+import Badge from '@/components/commen/Badge.vue'
+
 const props = defineProps({
-  id: String,
-  sectionVisible: Boolean
+    id: String,
 })
 const websiteStore = useWebsiteStore();
-const website = computed(() => websiteStore.content);
+const expertise = computed(() => websiteStore.content.pages.home.expertise);
+
+function getImagePath(name: string): string {
+  return `${import.meta.env.BASE_URL}images/${name}`
+}
 </script>
 <template>
     <section :id="id" class="section-pad bg-surface">
-      <div class="container-shell">
-        <div class="mx-auto max-w-2xl text-center">
-          <span class="chip inline-flex rounded-full px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em]">{{ website.expertise.badge }}</span>
-          <h2 class="mt-5 font-display text-4xl font-extrabold text-ink sm:text-5xl">{{ website.expertise.title }}</h2>
-          <p class="mt-5 leading-7 text-muted">{{ website.expertise.description }}</p>
-        </div>
+        <div class="container-shell">
+            <div class="mx-auto max-w-2xl text-center">
+                <Badge :class="['bg-white text-brand-deep']">{{expertise.badge}}</Badge>
+                <h2 class="mt-5 font-display text-4xl font-extrabold text-ink sm:text-5xl">{{ expertise.title }}</h2>
+                <p class="mt-5 leading-7 text-muted">{{ expertise.description }}</p>
+            </div>
 
-        <div class="mt-12 mx-auto max-w-7xl px-5 lg:px-8">
-            <div class="expertise-layout">
-                <div class="grid gap-5">
-                    <article v-for="service in website.expertise.items.filter((s: any) => s.side === 'left')" :key="service.id" class="service-card rounded-[var(--radius)] p-6" :style="{ '--arc': service.arcX + 'px' }">
-                        <component :is="(LucideIcons as Record<string, any>)[service.icon]" class="h-7 w-7 text-brand" />
-                        <h3 class="mt-5 font-extrabold uppercase tracking-[0.08em] text-brandDeep">{{ service.title }}</h3>
-                        <p class="mt-3 text-sm leading-6 text-muted">{{ service.description }}</p>
-                    </article>
-                </div>
-                <div class="expertise-art">
-                   <img :src="BrandMan" :alt="website.expertise.imageAlt" />
-               </div>
-                <div class="grid gap-5">
-                    <article v-for="service in website.expertise.items.filter((s: any) => s.side === 'right')" :key="service.id" class="service-card rounded-[var(--radius)] p-6" :style="{ '--arc': service.arcX + 'px' }">
-                        <component :is="(LucideIcons as Record<string, any>)[service.icon]" class="h-7 w-7 text-brand" />
-                        <h3 class="mt-5 font-extrabold uppercase tracking-[0.08em] text-brandDeep">{{ service.title }}</h3>
-                        <p class="mt-3 text-sm leading-6 text-muted">{{ service.description }}</p>
-                    </article>
+            <div class="mt-12 mx-auto max-w-7xl px-5 lg:px-8">
+                <div class="expertise-layout">
+                    <div class="grid gap-5">
+                        <article v-for="service in expertise.items.filter((s: any) => s.side === 'left')" :key="service.id" class="service-card rounded-[var(--radius)] p-6" :style="{ '--arc': service.arcX + 'px' }">
+                            <component :is="(LucideIcons as Record<string, any>)[service.icon]" class="h-7 w-7 text-brand" />
+                            <h3 class="mt-5 font-extrabold uppercase tracking-[0.08em] text-brandDeep">{{ service.title }}</h3>
+                            <p class="mt-3 text-sm leading-6 text-muted">{{ service.description }}</p>
+                        </article>
+                    </div>
+                    <div class="expertise-art">
+                        <img :src="getImagePath(expertise.image)" :alt="expertise.imageAlt" />
+                    </div>
+                    <div class="grid gap-5">
+                        <article v-for="service in expertise.items.filter((s: any) => s.side === 'right')" :key="service.id" class="service-card rounded-[var(--radius)] p-6" :style="{ '--arc': service.arcX + 'px' }">
+                            <component :is="(LucideIcons as Record<string, any>)[service.icon]" class="h-7 w-7 text-brand" />
+                            <h3 class="mt-5 font-extrabold uppercase tracking-[0.08em] text-brandDeep">{{ service.title }}</h3>
+                            <p class="mt-3 text-sm leading-6 text-muted">{{ service.description }}</p>
+                        </article>
+                    </div>
                 </div>
             </div>
-         </div>
-      </div>
+        </div>
     </section>
 </template>
 <style scoped>

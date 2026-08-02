@@ -1,50 +1,44 @@
 <script setup lang="ts">
 import { computed } from "vue";
 import { useWebsiteStore } from "@/stores/website";
-import hero_transparent from "/images/hero_transparent.png";
 import { ShieldCheck, ArrowRight, LayoutGrid } from '@lucide/vue';
 import { HomePageSection, contactUs } from '@/router/routes'
 import FloatingCube from '@/components/commen/Floatingcube.vue';
 
-import hipaaCompliantSeeklogo  from '/images/hipaa-compliant-seeklogo.png'
+const websiteStore = useWebsiteStore();
+const hero = computed(() => websiteStore.content.pages.home.hero);
+const services:any = HomePageSection.find((s) => s.id === 'services');
 
 const props = defineProps({
   id: String,
-  sectionVisible: Boolean
 })
-const websiteStore = useWebsiteStore();
-const website = computed(() => websiteStore.content);
-const services:any = HomePageSection.find((s) => s.id === 'services');
-const entryExitFromLeft = computed(() => props.sectionVisible ? 'anim-from-left' : 'anim-exit-left');
+
+function getImagePath(name: string): string {
+  return `${import.meta.env.BASE_URL}images/${name}`
+}
 </script>
 <template>
-    <section :id="id" class="relative overflow-hidden pt-14 sm:pt-20 pb-0">
+    <section class="relative overflow-hidden pt-14 sm:pt-20 pb-0">
         <div class="container-shell grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
             <div class="max-w-3xl">
-                <AnimationSection name="slide-left">
-                    <div v-if="sectionVisible" class="chip mb-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold" :class="entryExitFromLeft">
-                        <!-- <ShieldCheck class="h-4 w-4 text-brand" /> -->
-                        <img
-                            :src="hipaaCompliantSeeklogo"
-                            class="h-4 w-4 text-brand"
-                        />
-                        {{ website.hero.badge }}
-                    </div>
-                </AnimationSection>
-                <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl" :class="entryExitFromLeft">
-                    {{ website.hero.headline.accent }}
-                    <span class="block text-brand-deep">{{ website.hero.headline.outline }}</span>
+                <div class="chip mb-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold">
+                    <ShieldCheck class="h-4 w-4 text-brand" />
+                    {{ hero.badge }}
+                </div>
+                <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl">
+                    {{ hero.headline.accent }}
+                    <span class="block text-brand-deep">{{ hero.headline.outline }}</span>
                 </h1>
                 <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">
-                    {{ website.hero.intro }}
+                    {{ hero.intro }}
                 </p>
                 <div class="mt-9 flex flex-col gap-4 sm:flex-row">
                     <RouterLink :to="contactUs[0].path" :class="['inline-flex items-center justify-center gap-2 rounded-full bg-brand-deep px-7 py-4 text-sm font-extrabold text-white shadow-lift transition hover:-translate-y-0.5']">
-                        {{ website.hero.conversection }}
+                        {{ hero.conversection }}
                         <ArrowRight class="h-4 w-4" />
                     </RouterLink>
                     <RouterLink :to="services.path" :class="['inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white px-7 py-4 text-sm font-extrabold text-brand-deep transition hover:border-brand hover:text-brand']">
-                        {{ website.hero.services }}
+                        {{hero.services }}
                         <LayoutGrid class="h-4 w-4" />
                     </RouterLink>
                 </div>
@@ -101,7 +95,7 @@ const entryExitFromLeft = computed(() => props.sectionVisible ? 'anim-from-left'
                         :classNames="['shape-float-c']"
                     />
                     <img
-                        :src="hero_transparent"
+                        :src="getImagePath(hero.bannerImg)"
                         alt="Hero Image"
                         class="hero-image w-full max-w-md h-auto object-cover scale-x-[-1]"
                     />
@@ -110,18 +104,14 @@ const entryExitFromLeft = computed(() => props.sectionVisible ? 'anim-from-left'
         </div>
         <div class="relative overflow-hidden border-y border-line bg-brand-deep py-4 text-white">
             <!-- Left fade -->
-            <div
-                class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent"
-            />
+            <div class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent" />
             <div class="marquee-track flex w-max gap-5 text-xs font-extrabold uppercase tracking-[0.2em] text-white/88">
-                <span class="flex items-center gap-5" v-for="(item, index) in [...website.hero.ticker, ...website.hero.ticker, ...website.hero.ticker]" :key="`${item}-${index}`">
+                <span class="flex items-center gap-5" v-for="(item, index) in [...hero.ticker, ...hero.ticker, ...hero.ticker]" :key="`${item}-${index}`">
                     <b class="text-accent">+</b> {{ item }}
                 </span>
             </div>
             <!-- Right fade -->
-            <div
-                class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent"
-            />
+            <div class="absolute right-0 top-0 h-full w-20 md:w-40 z-10 pointer-events-none bg-gradient-to-l from-white to-transparent" />
         </div>
     </section>
 </template>

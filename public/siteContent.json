@@ -3,160 +3,6 @@
         "name": "OutSource Cube",
         "logoAlt": "OutSource Cube Logo"
     },
-    "hero": {
-        "badge": "HIPAA-COMPLIANT ABA OPERATIONS SPECIALISTS",
-        "headline": {
-            "accent": "Trusted ABA Therapy",
-            "outline": "Operations Partner."
-        },
-        "introStrong": "More time for therapy",
-        "intro": "let our experienced ABA administrative team handle scheduling, billing, client intake, and operational support so your clinic can thrive.",
-        "conversection" : "Start a Conversation",
-        "services" : "Explore Services",
-        "ticker": [
-            "Administrative Support",
-            "ABA Scheduling",
-            "Insurance Billing",
-            "Patient Communication",
-            "Payroll & HR Support",
-            "Marketing & Growth Support"
-        ]
-    },
-    "serviceOverview": {
-        "badge": "WHAT WE SOLVE",
-        "title": "The challenges slowing your business down",
-        "description": "Every growing business faces operational bottlenecks. We provide dedicated solutions that improve efficiency, increase visibility, and support sustainable growth.",
-        "cards": [
-            {
-                "title": "ABA Administrative & Operations",
-                "image": "/strategic-talent.jpg",
-                "description": "Keep your practice running efficiently with dedicated administrative support, including scheduling, documentation, insurance coordination, client communication, and day-to-day operational management.",
-                "icon": "Handshake",
-                "iconClass": "bg-brand/10 text-brand"
-            },
-            {
-                "title": "Social Media Management & Strategy",
-                "image": "/hr-excellence.webp",
-                "description": "Strengthen your online presence with strategic content, social media management, audience engagement, and brand-focused campaigns that build trust and long-term growth.",
-                "icon": "BadgeCheck",
-                "iconClass": "bg-coral/10 text-coral"
-            },
-            {
-                "title": "Digital Marketing & Ads",
-                "image": "/tailored-engagement.png",
-                "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
-                "icon": "BadgeCheck",
-                "iconClass": "bg-mint/45 text-brand-deep    "
-            }
-        ]
-    },
-    "whyUs": {
-        "backgroundWord": "WHY",
-        "eyebrow": "WHY CHOOSE US",
-        "title": "Overwhelmed by Administrative Tasks? Focus on Care, We'll Handle the Rest.",
-        "description": "Running an ABA practice means balancing client care with endless administrative responsibilities. From scheduling and insurance coordination to documentation and daily operations, these tasks can slow growth and overwhelm your team. Outsource Cube becomes your trusted administrative partner, delivering reliable, HIPAA-compliant support that streamlines operations, reduces costs, and gives your staff more time to focus on what matters most.",
-        "imageAlt": "Outsource Cube as Your ABA Administrative Partner",
-        "features": [
-            {
-                "title": "ABA Industry Expertise",
-                "icon": "CheckCircle"
-            },
-            {
-                "title": "HIPAA-Compliant Processes",
-                "icon": "LockKeyhole"
-            },
-            {
-                "title": "Cost-Effective Solutions",
-                "icon": "WalletCards"
-            },
-            {
-                "title": "Dedicated Support Team",
-                "icon": "UsersRound"
-            },
-            {
-                "title": "Scalable Growth Support",
-                "icon": "IdCardLanyard"
-            }
-        ]
-    },
-    "about": {
-        "badge": "ABOUT US",
-        "title": "More Than an Outsourcing Company - A Partner in Your Growth",
-        "description": "Success isn't just about having more resources, it's about having the right support. At Outsource Cube, we provide dedicated administrative operations, digital marketing, and business support solutions that simplify everyday challenges. From optimizing workflows and managing back-office operations to building your online presence, we help businesses operate more efficiently, scale confidently, and achieve sustainable growth.",
-        "imageAlt": "OUTSOURCE CUBE IS MORE THAN JUST AN ADMINISTRATIVE SUPPORT PROVIDER"
-    },
-    "expertise": {
-        "badge": "AREAS OF EXPERTISE",
-        "title": "Comprehensive Support for Every Stage of Your ABA Practice",
-        "description": "From client onboarding to revenue management, Outsource Cube delivers reliable administrative solutions that improve efficiency, reduce operational burdens, and help your practice grow with confidence.",
-        "imageAlt": "Specialized ABA Administrative Solutions",
-        "items": [
-            {
-                "id": 1,
-                "title": "ABA SCHEDULING & CALENDAR MANAGEMENT",
-                "description": "Ensure seamless coordination between therapists, clients, and families with accurate scheduling and appointment management.",
-                "icon": "Users",
-                "side": "left",
-                "arcX": 0
-            },
-            {
-                "id": 2,
-                "title": "INSURANCE BILLING & CLAIMS MANAGEMENT",
-                "description": "Improve cash flow with clean claim submissions, payment posting, and revenue cycle support.",
-                "icon": "ChartLine",
-                "side": "left",
-                "arcX": -36
-            },
-            {
-                "id": 3,
-                "title": "INSURANCE VERIFICATION & AUTHORIZATIONS",
-                "description": "Verify benefits, track authorizations, and ensure service approvals are in place before therapy begins.",
-                "icon": "Palette",
-                "side": "left",
-                "arcX": -54
-            },
-            {
-                "id": 4,
-                "title": "CLIENT INTAKE & ONBOARDING",
-                "description": "Create a smooth onboarding experience by managing inquiries, collecting documents, and coordinating new client setup.",
-                "icon": "ShoppingBag",
-                "side": "left",
-                "arcX": -30
-            },
-            {
-                "id": 5,
-                "title": "CLIENT & FAMILY COMMUNICATION",
-                "description": "Maintain strong relationships with families through appointment reminders, follow-ups, and ongoing administrative support.",
-                "icon": "Heart",
-                "side": "right",
-                "arcX": 0
-            },
-            {
-                "id": 6,
-                "title": "PAYROLL & HR ADMINISTRATION",
-                "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR documentation.",
-                "icon": "Cog",
-                "side": "right",
-                "arcX": 36
-            },
-            {
-                "id": 7,
-                "title": "REVENUE CYCLE MANAGEMENT (RCM)",
-                "description": "Optimize collections, reduce outstanding balances, and improve financial performance through proactive account management.",
-                "icon": "Wrench",
-                "side": "right",
-                "arcX": 54
-            },
-            {
-                "id": 8,
-                "title": "ADMINISTRATIVE & BACK-OFFICE SUPPORT",
-                "description": "Handle daily operational tasks, documentation updates, reporting, data entry, and workflow coordination with ease.",
-                "icon": "PlusCircle",
-                "side": "right",
-                "arcX": 30
-            }
-        ]
-    },
     "footer": {
         "description": "The Operations Partner for ABA Practices",
         "socialMedia": {
@@ -187,6 +33,163 @@
         "allRightsReserved" : "OutSource Cube. All rights reserved."
     },
     "pages": {
+        "home" : {
+            "hero": {
+                "bannerImg": "hero_transparent.png",
+                "badge": "HIPAA-COMPLIANT ABA OPERATIONS SPECIALISTS",
+                "headline": {
+                    "accent": "Trusted ABA Therapy",
+                    "outline": "Operations Partner."
+                },
+                "introStrong": "More time for therapy",
+                "intro": "let our experienced ABA administrative team handle scheduling, billing, client intake, and operational support so your clinic can thrive.",
+                "conversection" : "Start a Conversation",
+                "services" : "Explore Services",
+                "ticker": [
+                    "Administrative Support",
+                    "ABA Scheduling",
+                    "Insurance Billing",
+                    "Patient Communication",
+                    "Payroll & HR Support",
+                    "Marketing & Growth Support"
+                ]
+            },
+            "serviceOverview": {
+                "badge": "WHAT WE SOLVE",
+                "title": "The challenges slowing your business down",
+                "description": "Every growing business faces operational bottlenecks. We provide dedicated solutions that improve efficiency, increase visibility, and support sustainable growth.",
+                "cards": [
+                    {
+                        "title": "ABA Administrative & Operations",
+                        "description": "Keep your practice running efficiently with dedicated administrative support, including scheduling, documentation, insurance coordination, client communication, and day-to-day operational management.",
+                        "icon": "Handshake",
+                        "iconClass": "bg-brand/10 text-brand"
+                    },
+                    {
+                        "title": "Social Media Management & Strategy",
+                        "description": "Strengthen your online presence with strategic content, social media management, audience engagement, and brand-focused campaigns that build trust and long-term growth.",
+                        "icon": "BadgeCheck",
+                        "iconClass": "bg-coral/10 text-coral"
+                    },
+                    {
+                        "title": "Digital Marketing & Ads",
+                        "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
+                        "icon": "BadgeCheck",
+                        "iconClass": "bg-mint/45 text-brand-deep    "
+                    }
+                ]
+            },
+            "whyUs": {
+                "backgroundWord": "WHY",
+                "badge": "WHY CHOOSE US",
+                "title": "Overwhelmed by Administrative Tasks? Focus on Care, We'll Handle the Rest.",
+                "description": "Running an ABA practice means balancing client care with endless administrative responsibilities. From scheduling and insurance coordination to documentation and daily operations, these tasks can slow growth and overwhelm your team. Outsource Cube becomes your trusted administrative partner, delivering reliable, HIPAA-compliant support that streamlines operations, reduces costs, and gives your staff more time to focus on what matters most.",
+                "image": "why_choos_us_man.png",
+                "imageAlt": "Outsource Cube as Your ABA Administrative Partner",
+                "features": [
+                    {
+                        "title": "ABA Industry Expertise",
+                        "icon": "CheckCircle"
+                    },
+                    {
+                        "title": "HIPAA-Compliant Processes",
+                        "icon": "LockKeyhole"
+                    },
+                    {
+                        "title": "Cost-Effective Solutions",
+                        "icon": "WalletCards"
+                    },
+                    {
+                        "title": "Dedicated Support Team",
+                        "icon": "UsersRound"
+                    },
+                    {
+                        "title": "Scalable Growth Support",
+                        "icon": "IdCardLanyard"
+                    }
+                ]
+            },
+            "expertise": {
+                "badge": "AREAS OF EXPERTISE",
+                "title": "Comprehensive Support for Every Stage of Your ABA Practice",
+                "description": "From client onboarding to revenue management, Outsource Cube delivers reliable administrative solutions that improve efficiency, reduce operational burdens, and help your practice grow with confidence.",
+                "image": "Brand_Men Without_BG_V1.png",
+                "imageAlt": "Specialized ABA Administrative Solutions",
+                "items": [
+                    {
+                        "id": 1,
+                        "title": "ABA SCHEDULING & CALENDAR MANAGEMENT",
+                        "description": "Ensure seamless coordination between therapists, clients, and families with accurate scheduling and appointment management.",
+                        "icon": "Users",
+                        "side": "left",
+                        "arcX": 0
+                    },
+                    {
+                        "id": 2,
+                        "title": "INSURANCE BILLING & CLAIMS MANAGEMENT",
+                        "description": "Improve cash flow with clean claim submissions, payment posting, and revenue cycle support.",
+                        "icon": "ChartLine",
+                        "side": "left",
+                        "arcX": -36
+                    },
+                    {
+                        "id": 3,
+                        "title": "INSURANCE VERIFICATION & AUTHORIZATIONS",
+                        "description": "Verify benefits, track authorizations, and ensure service approvals are in place before therapy begins.",
+                        "icon": "Palette",
+                        "side": "left",
+                        "arcX": -54
+                    },
+                    {
+                        "id": 4,
+                        "title": "CLIENT INTAKE & ONBOARDING",
+                        "description": "Create a smooth onboarding experience by managing inquiries, collecting documents, and coordinating new client setup.",
+                        "icon": "ShoppingBag",
+                        "side": "left",
+                        "arcX": -30
+                    },
+                    {
+                        "id": 5,
+                        "title": "CLIENT & FAMILY COMMUNICATION",
+                        "description": "Maintain strong relationships with families through appointment reminders, follow-ups, and ongoing administrative support.",
+                        "icon": "Heart",
+                        "side": "right",
+                        "arcX": 0
+                    },
+                    {
+                        "id": 6,
+                        "title": "PAYROLL & HR ADMINISTRATION",
+                        "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR documentation.",
+                        "icon": "Cog",
+                        "side": "right",
+                        "arcX": 36
+                    },
+                    {
+                        "id": 7,
+                        "title": "REVENUE CYCLE MANAGEMENT (RCM)",
+                        "description": "Optimize collections, reduce outstanding balances, and improve financial performance through proactive account management.",
+                        "icon": "Wrench",
+                        "side": "right",
+                        "arcX": 54
+                    },
+                    {
+                        "id": 8,
+                        "title": "ADMINISTRATIVE & BACK-OFFICE SUPPORT",
+                        "description": "Handle daily operational tasks, documentation updates, reporting, data entry, and workflow coordination with ease.",
+                        "icon": "PlusCircle",
+                        "side": "right",
+                        "arcX": 30
+                    }
+                ]
+            },
+            "about": {
+                "badge": "ABOUT US",
+                "title": "More Than an Outsourcing Company - A Partner in Your Growth",
+                "description": "Success isn't just about having more resources, it's about having the right support. At Outsource Cube, we provide dedicated administrative operations, digital marketing, and business support solutions that simplify everyday challenges. From optimizing workflows and managing back-office operations to building your online presence, we help businesses operate more efficiently, scale confidently, and achieve sustainable growth.",
+                "image": "about_us_man.png",
+                "imageAlt": "OUTSOURCE CUBE IS MORE THAN JUST AN ADMINISTRATIVE SUPPORT PROVIDER"
+            }
+        },
         "hipaaCompliance": {
             "badge": "HIPAA-aware support",
             "title": "Protect Patient Privacy Without Slowing Your Operations",
