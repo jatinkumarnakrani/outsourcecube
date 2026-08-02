@@ -1,30 +1,25 @@
 <script setup lang="ts">
-import MainHeaderLogo from "/images/3D_logo_Without_BG.png";
-import { computed } from "vue";
-import { useWebsiteStore } from "@/stores/website";
-// import { MessageCircle } from 'lucide-vue-next';
-import { MessageCircle } from "@lucide/vue";
+import { ref, onMounted, onUnmounted, computed } from 'vue'
+import { HomePageSection } from '@/router/routes'
+import { useWebsiteStore } from "@/stores/website"
 import DesktopNavigationBar from "@/layout/DesktopNavigationBar.vue";
 import MobileNavigationBar from "@/layout/MobileNavigationBar.vue";
-import { HomePageSection } from '@/router/routes'
 
 const websiteStore = useWebsiteStore();
 const website = computed(() => websiteStore.content);
 const contact:any = HomePageSection.find((s) => s.id === 'contact');
 
-
-import { ref, onMounted, onUnmounted } from 'vue'
+function getImagePath(name: string): string {
+    return `${import.meta.env.BASE_URL}images/${name}`
+}
 
 const isScrolled = ref(false)
-
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 10
 }
-
 onMounted(() => {
   window.addEventListener('scroll', handleScroll, { passive: true })
 })
-
 onUnmounted(() => {
   window.removeEventListener('scroll', handleScroll)
 })
@@ -38,7 +33,7 @@ onUnmounted(() => {
     ]">
         <nav class="container-shell flex h-20 items-center justify-between gap-6" :class="{'border-b border-sky-100':!isScrolled}">
             <RouterLink :to="'/'" :class="['flex','items-center','gap-3']">
-                <img class="brand-logo" :src="MainHeaderLogo" alt="OutSource Cube" />
+                <img class="brand-logo" :src="getImagePath(website.brand.logoImage)" :alt="website.brand.logoAlt" />
             </RouterLink>
             <DesktopNavigationBar />
             <MobileNavigationBar />

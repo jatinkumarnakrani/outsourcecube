@@ -1,6 +1,7 @@
 {
     "brand": {
         "name": "OutSource Cube",
+        "logoImage": "3D_logo_Without_BG.png",
         "logoAlt": "OutSource Cube Logo"
     },
     "footer": {
@@ -30,6 +31,8 @@
                 }
             ]
         },
+        "treeimg" : "Save Tree.png",
+        "treeAltText": "Tree - Every tree matters",
         "allRightsReserved" : "OutSource Cube. All rights reserved."
     },
     "pages": {
