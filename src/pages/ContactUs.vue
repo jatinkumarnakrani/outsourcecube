@@ -17,7 +17,7 @@ function getImagePath(name: string): string {
         :badge="contactUs.heading.badge"
         :title="contactUs.heading.title"
         :intro="contactUs.heading.intro"
-        :img="{ src: getImagePath(contactUs.heading.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
+        :img="{ src: getImagePath(contactUs.heading.bannerImg), alt: 'Illustration', class:['pe-4', 'h-150'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
     />
     <Contact id="contact-us" :sectionVisible="true">
         <CallToAction 

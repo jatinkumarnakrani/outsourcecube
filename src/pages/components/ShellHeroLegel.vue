@@ -35,7 +35,7 @@ defineProps({
         <div class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden py-8">
             <div class="sm:block col-span-12 lg:col-span-6 self-center">
                 <div class="w-full" data-v-b444fb2c="">
-                    <img :src="img?.src" :style="img?.style" :class="[]"  />
+                    <img :src="img?.src" :style="img?.style" :class="img?.class"  />
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
