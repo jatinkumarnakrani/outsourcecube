@@ -3,7 +3,7 @@ import {routes } from '@/router/routes'
 
 const router = createRouter({
     history: createWebHistory(import.meta.env.BASE_URL),
-    // history: createWebHistory('/jatin1/'),
+    // history: createWebHistory('/jatin/'),
     routes,
     scrollBehavior(to,_from, savedPosition) {
         if (savedPosition) {
