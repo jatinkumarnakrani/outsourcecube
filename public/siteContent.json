@@ -12,17 +12,17 @@
                 {
                     "icon": "Facebook_Icon.png",
                     "label": "Facebook",
-                    "path": "https://outsourcecube.com/"
+                    "path": "https://www.facebook.com/outsourcecube"
                 },
                 {
                     "icon": "Linkedin_Icon.png",
                     "label": "LinkedIn",
-                    "path": "https://outsourcecube.com/"
+                    "path": "https://linkedin.com/company/outsource-cube"
                 },
                 {
                     "icon": "Instagram_ Icon.png",
                     "label": "Instagram",
-                    "path": "https://outsourcecube.com/"
+                    "path": "https://www.instagram.com/outsourcecube/"
                 },
                 {
                     "icon": "X_Icon.png",
@@ -54,7 +54,10 @@
                     "Insurance Billing",
                     "Patient Communication",
                     "Payroll & HR Support",
-                    "Marketing & Growth Support"
+                    "Marketing & Growth Support",
+                    "Social Media Management",
+                    "Digital Marketing",
+                    "Website Development"
                 ]
             },
             "serviceOverview": {
@@ -65,7 +68,7 @@
                     {
                         "title": "ABA Administrative & Operations",
                         "description": "Keep your practice running efficiently with dedicated administrative support, including scheduling, documentation, insurance coordination, client communication, and day-to-day operational management.",
-                        "icon": "Handshake",
+                        "icon": "ClipboardList",
                         "iconClass": "bg-brand/10 text-brand"
                     },
                     {
@@ -77,7 +80,7 @@
                     {
                         "title": "Digital Marketing & Ads",
                         "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
-                        "icon": "BadgeCheck",
+                        "icon": "TrendingUp",
                         "iconClass": "bg-mint/45 text-brand-deep    "
                     }
                 ]
@@ -100,7 +103,7 @@
                     },
                     {
                         "title": "Cost-Effective Solutions",
-                        "icon": "WalletCards"
+                        "icon": "DollarSign"
                     },
                     {
                         "title": "Dedicated Support Team",
@@ -108,7 +111,7 @@
                     },
                     {
                         "title": "Scalable Growth Support",
-                        "icon": "IdCardLanyard"
+                        "icon": "HandFist"
                     }
                 ]
             },
@@ -123,7 +126,7 @@
                         "id": 1,
                         "title": "ABA SCHEDULING & CALENDAR MANAGEMENT",
                         "description": "Ensure seamless coordination between therapists, clients, and families with accurate scheduling and appointment management.",
-                        "icon": "Users",
+                        "icon": "CalendarCheck",
                         "side": "left",
                         "arcX": 0
                     },
@@ -131,7 +134,7 @@
                         "id": 2,
                         "title": "INSURANCE BILLING & CLAIMS MANAGEMENT",
                         "description": "Improve cash flow with clean claim submissions, payment posting, and revenue cycle support.",
-                        "icon": "ChartLine",
+                        "icon": "Receipt",
                         "side": "left",
                         "arcX": -36
                     },
@@ -139,7 +142,7 @@
                         "id": 3,
                         "title": "INSURANCE VERIFICATION & AUTHORIZATIONS",
                         "description": "Verify benefits, track authorizations, and ensure service approvals are in place before therapy begins.",
-                        "icon": "Palette",
+                        "icon": "FileCheck",
                         "side": "left",
                         "arcX": -54
                     },
@@ -147,7 +150,7 @@
                         "id": 4,
                         "title": "CLIENT INTAKE & ONBOARDING",
                         "description": "Create a smooth onboarding experience by managing inquiries, collecting documents, and coordinating new client setup.",
-                        "icon": "ShoppingBag",
+                        "icon": "UserPlus",
                         "side": "left",
                         "arcX": -30
                     },
@@ -155,7 +158,7 @@
                         "id": 5,
                         "title": "CLIENT & FAMILY COMMUNICATION",
                         "description": "Maintain strong relationships with families through appointment reminders, follow-ups, and ongoing administrative support.",
-                        "icon": "Heart",
+                        "icon": "MessageCircleHeart",
                         "side": "right",
                         "arcX": 0
                     },
@@ -163,7 +166,7 @@
                         "id": 6,
                         "title": "PAYROLL & HR ADMINISTRATION",
                         "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR documentation.",
-                        "icon": "Cog",
+                        "icon": "WalletCards",
                         "side": "right",
                         "arcX": 36
                     },
@@ -171,7 +174,7 @@
                         "id": 7,
                         "title": "REVENUE CYCLE MANAGEMENT (RCM)",
                         "description": "Optimize collections, reduce outstanding balances, and improve financial performance through proactive account management.",
-                        "icon": "Wrench",
+                        "icon": "TrendingUp",
                         "side": "right",
                         "arcX": 54
                     },
@@ -179,7 +182,7 @@
                         "id": 8,
                         "title": "ADMINISTRATIVE & BACK-OFFICE SUPPORT",
                         "description": "Handle daily operational tasks, documentation updates, reporting, data entry, and workflow coordination with ease.",
-                        "icon": "PlusCircle",
+                        "icon": "Settings",
                         "side": "right",
                         "arcX": 30
                     }
@@ -319,42 +322,42 @@
                     "heading": "Complete ABA administrative & operational support",
                     "cards": [
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Client Scheduling & Calendar Management",
                             "description": "Coordinate appointments, therapist schedules, cancellations, and rescheduling to keep your practice running smoothly."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Client Intake & Onboarding",
                             "description": "Manage inquiries, collect documentation, coordinate assessments, and create a seamless onboarding experience for new families."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Insurance Verification & Authorisations",
                             "description": "Verify insurance eligibility, obtain authorisations, and ensure services are approved before treatment begins."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Insurance Billing & Claims Support",
                             "description": "Assist with claim submissions, payment posting, denial follow-ups, and billing workflows to improve reimbursement efficiency."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Client & Family Communication",
                             "description": "Provide professional communication, appointment reminders, follow-ups, and administrative coordination to enhance the client experience."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Payroll & HR Administration",
                             "description": "Support your growing team with timesheet management, payroll preparation, PTO tracking, and HR administrative tasks."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Revenue Cycle Management",
                             "description": "Strengthen financial performance through account follow-ups, collections support, payment tracking, and revenue optimisation."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Administrative & Back-Office Support",
                             "description": "Handle documentation, reporting, data entry, workflow coordination, and day-to-day operational tasks that keep your practice organised."
                         }
@@ -409,7 +412,7 @@
                     "intro": "Partner with Outsource Cube for dependable ABA administrative support that keeps your practice organised, efficient, and ready to grow.",
                     "button": {
                         "label": "Schedule a Free Consultation",
-                        "link": "https://outsourcecube.com/",
+                        "link": "https://forms.gle/RoYs63gHy6JtZPRQ7",
                         "icon": "ArrowRight"
                     }
                 }
@@ -430,32 +433,32 @@
                     "heading": "Complete digital marketing solutions",
                     "cards": [
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Search Engine Optimisation (SEO)",
                             "description":"Improve your search rankings and attract organic traffic with a strategy designed for long-term growth."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Google Ads (PPC)",
                             "description":"Reach high-intent customers through targeted Google Ads campaigns that maximise your return on investment."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Meta Ads",
                             "description":"Create engaging Facebook and Instagram advertising campaigns that drive awareness, leads, and conversions."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Email Marketing",
                             "description":"Build stronger customer relationships with personalised email campaigns that nurture leads and increase retention."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Content Marketing",
                             "description":"Create valuable content that educates your audience, builds trust, and positions your brand as an industry leader."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Content Marketing",
                             "description":"Track campaign performance with detailed insights and continuous optimisation for better results."
                         }
@@ -510,7 +513,7 @@
                     "intro": "Let's create a digital marketing strategy that attracts the right audience, increases conversions, and helps your business achieve long-term success.",
                     "button": {
                         "label": "Schedule a Free Consultation",
-                        "link": "https://outsourcecube.com/",
+                        "link": "https://forms.gle/T9WrNeVhdhdKvvcP8",
                         "icon": "ArrowRight"
                     }
                 }
@@ -531,34 +534,34 @@
                     "heading": "Complete website development & management solutions",
                     "cards": [
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Custom Website Design & Development",
                             "description": "Create modern, responsive websites tailored to your brand and business objectives."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "WordPress Development",
                             "description": "Build flexible, easy-to-manage WordPress websites with custom functionality and intuitive content management."
                         },
 
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "E-commerce Website Development",
                             "description": "Develop secure online stores that deliver seamless shopping experiences and drive sales."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Website Maintenance & Support",
                             "description": "Keep your website updated, secure, and performing at its best with ongoing maintenance and technical support."
                         },
 
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Website Performance & SEO Optimisation",
                             "description": "Improve loading speed, search engine visibility, and user experience to maximise website performance."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Hosting, Security & Backup Management",
                             "description": "Protect your website with reliable hosting, SSL security, regular backups, and proactive monitoring."
                         }
@@ -613,7 +616,7 @@
                     "intro": "Whether you're launching a new website or improving an existing one, we'll create a digital experience that helps your business stand out and grow with confidence.",
                     "button": {
                         "label": "Start Your Website Project",
-                        "link": "https://outsourcecube.com/",
+                        "link": "https://forms.gle/hhRCrqXaqAR6bXzd6",
                         "icon": "ArrowRight"
                     }
                 }
@@ -634,34 +637,34 @@
                     "heading": "Complete social media management solutions",
                     "cards": [
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Content Strategy & Planning",
                             "description": "Develop a customised content strategy aligned with your brand, business goals, and target audience."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Creative Content Design",
                             "description": "Eye-catching graphics, professional visuals, and branded content designed to capture attention."
                         },
 
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Content Creation & Copywriting",
                             "description": "Informative, engaging, and conversion-focused content tailored to your audience."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#ff1f20", "#ff333c"],
                             "title": "Social Media Management",
                             "description": "Consistent publishing, profile optimisation, and platform management across your social channels."
                         },
 
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#01665f", "#02a69d"],
                             "title": "Community Engagement",
                             "description": "Respond to comments, messages, and audience interactions to strengthen customer relationships."
                         },
                         {
-                            "icon": "Box",
+                            "cubeColor": ["#dfa201", "#ffc509"],
                             "title": "Performance Reporting",
                             "description": "Track growth, engagement, and campaign performance with actionable insights."
                         }
@@ -743,7 +746,7 @@
                     "intro": "Build stronger relationships, increase your visibility, and create a social media presence that truly represents your brand.",
                     "button": {
                         "label": "Schedule a Free Consultation",
-                        "link": "https://outsourcecube.com/",
+                        "link": "https://forms.gle/b9PvGgDUcYm99VHG7",
                         "icon": "ArrowRight"
                     }
                 }
@@ -771,7 +774,16 @@
                         "Insurance Billing",
                         "Intake Coordination",
                         "Back-Office Support",
-                        "HIPAA-Compliant Operations"
+                        "HIPAA-Compliant Operations",
+                        "Social Media Management & Strategy",
+                        "Digital Marketing & Advertising",
+                        "Website Development & Management",
+                        "Google Ads (PPC)",
+                        "Meta Ads (Facebook & Instagram)",
+                        "Branding & Graphic Design",
+                        "Virtual Assistant Services",
+                        "Other"
+                        
                     ],
                     "sendButton": "Send Message"
                 }
@@ -794,11 +806,11 @@
                 }
             ],
             "callToAction": {
-                "title": "Let's Create Something Meaningful Together!",
-                "intro": "Whether you're solving today's challenges or planning for tomorrow's opportunities, we're ready to support your journey.",
+                "title": "Let's Start the Conversation",
+                "intro": "Every business has unique goals and challenges. Tell us what you're looking to achieve, and our team will help you find the right solution with confidence.",
                 "button": {
-                    "label": "Start Your Journey",
-                    "link": "https://outsourcecube.com/",
+                    "label": "Get in Touch",
+                    "link": "https://forms.gle/XRHrstHR5jgE1AmF8",
                     "icon": "ArrowRight"
                 }
             }

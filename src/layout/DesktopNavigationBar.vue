@@ -3,6 +3,7 @@ import { storeToRefs } from 'pinia'
 import { useWebsiteStore } from "@/stores/website";
 import { HomePageSection, hipaaCompliance, contactUs, services } from '@/router/routes'
 import { MessageCircle, ChevronDown } from "@lucide/vue";
+import * as LucideIcons from '@lucide/vue';
 
 const websiteStore = useWebsiteStore();
 const { activeTab } = storeToRefs(websiteStore) // activeTab is now a reactive ref
@@ -49,7 +50,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
         <div ref="navRef" class="relative"  @mouseenter="openDropdown" @mouseleave="scheduleClose">
             <button type="button" class="flex items-center gap-1 font-medium text-brand-deep relative hover:text-brand-deep group" @click="isOpen = !isOpen">
                 Our Services
-                <ChevronDown class="h-4 w-4 transition-transform" :class="{ 'rotate-180': isOpen }" />
+                <component :is="(LucideIcons as Record<string, any>)['ChevronDown']" class="h-4 w-4 transition-transform" :class="{ 'rotate-180': isOpen }" />
                 <span class="absolute left-0 -bottom-1 h-0.5 w-full bg-brand-deep scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
             </button>
 
@@ -100,7 +101,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
         </RouterLink>
     </div>
     <RouterLink :to="contactUs[0].path" :class="['hidden lg:inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lift']">
-        <MessageCircle class="h-4 w-4" />
+        <component :is="(LucideIcons as Record<string, any>)[contactUs[0].props.menuIcon]" class="h-4 w-4" />
         {{ contactUs[0].name}}
     </RouterLink>
 </template>

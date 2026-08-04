@@ -1,16 +1,12 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue'
+import { ref} from 'vue'
 import { RouterLink, useRoute } from 'vue-router'
-import { ChevronRight, Handshake } from '@lucide/vue'
-
-interface NavService {
-  name: string
-  path: string
-}
+import * as LucideIcons from '@lucide/vue';
+import { type RouteRecordRaw } from 'vue-router'
 
 interface Props {
   title: string
-  services: NavService[]
+  services: RouteRecordRaw[]
 }
 
 const props = defineProps<Props>()
@@ -62,9 +58,9 @@ const isMainMenuOpen = defineModel<boolean>('isMainMenuOpen', { default: false }
         :aria-controls="panelId"
         @click="toggle"
     >
-        <Handshake class="h-4 w-4" />
+        <component :is="(LucideIcons as Record<string, any>)['Briefcase']" class="h-4 w-4" />
         <span class="flex-1 text-left">{{ props.title }}</span>
-        <ChevronRight class="w-4 h-4 text-gray-500 transition-transform duration-200" :class="{ 'rotate-90': isOpen }" />
+        <component :is="(LucideIcons as Record<string, any>)['ChevronRight']" class="w-4 h-4 text-gray-500 transition-transform duration-200" :class="{ 'rotate-90': isOpen }" />
     </button>
 
     <Transition @enter="onEnter" @after-enter="onAfterEnter" @leave="onLeave">
@@ -81,7 +77,7 @@ const isMainMenuOpen = defineModel<boolean>('isMainMenuOpen', { default: false }
               :class="{ 'text-gray-900 font-semibold': isActive(service.path) }"
               @click="isMainMenuOpen = false"
             >
-                <Handshake class="h-4 w-4" />
+                <component :is="(LucideIcons as Record<string, any>)[service.props.menuIcon]" class="h-4 w-4" />
                 {{ service.name }}
                 </RouterLink>
           </li>

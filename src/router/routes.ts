@@ -13,6 +13,7 @@ export interface SectionConfig {
   path:      string
   component: Component
   showInNav: Boolean
+  menuIcon:  string
 }
 
 export const hipaaCompliance: RouteRecordRaw[] = [
@@ -20,6 +21,9 @@ export const hipaaCompliance: RouteRecordRaw[] = [
         path: '/hipaa-compliance',
         name: 'HIPAA Compliance',
         component: () => import('@/pages/HipaaCompliance.vue'),
+        props: {
+            menuIcon: 'ShieldCheck'
+        }
     }
 ]
 export const termsAndConditions: RouteRecordRaw[] = [
@@ -41,6 +45,9 @@ export const contactUs: RouteRecordRaw[] = [
         path: '/contact',
         name: 'Contact Us',
         component: () => import('@/pages/ContactUs.vue'),
+        props: {
+            menuIcon: 'MessageCircle'
+        }
     }
 ]
 export const services: RouteRecordRaw[] = [
@@ -50,7 +57,8 @@ export const services: RouteRecordRaw[] = [
         component: () => import('@/pages/services/ABAAdministrativeOperations.vue'),
         props: {
             icon: ABATherapyOperations,
-            description: 'DevDort offers unparalleled Executive Search services, connecting you with elite......'
+            description: 'Streamlining operations with reliable administrative support.',
+            menuIcon: 'ClipboardList'
         }
     },
     {
@@ -59,7 +67,8 @@ export const services: RouteRecordRaw[] = [
         component: () => import('@/pages/services/SocialMediaManagement.vue'),
         props: {
             icon: socialMediaManagementIcon,
-            description: 'Simplify your payroll processes and ensure compliance with DevDort\u2019s comprehensive.....'
+            description: 'Building your brand with engaging digital content.',
+            menuIcon: 'Share2'
         }
     },
     {
@@ -68,7 +77,8 @@ export const services: RouteRecordRaw[] = [
         component: () => import('@/pages/services/DigitalMarketing.vue'),
         props: {
             icon: digitalMarketingIcon,
-            description: 'DevDort offers unparalleled Executive Search services, connecting you with elite......'
+            description: 'Driving measurable growth through smart digital strategies.',
+            menuIcon: 'Megaphone'
         }
     },
     {
@@ -77,7 +87,8 @@ export const services: RouteRecordRaw[] = [
         component: () => import('@/pages/services/WebsiteDevelopment.vue'),
         props: {
             icon: websiteDevelopmentIcon,
-            description: 'At DevDort, we recognize that every business has unique staffing needs that can fluctuate.....'
+            description: 'Building modern websites that drive business success.',
+            menuIcon: 'Code'
         }
     }
 ]
@@ -111,41 +122,47 @@ export const HomePageSection: SectionConfig[] = [
         label: 'Home',
         path: '/',
         component:  defineAsyncComponent(() => import('@/components/Hero.vue')),
-        showInNav: false
+        showInNav: false,
+        menuIcon: 'Home'
     },
     {
         id: 'serviceOverview',
         label: 'Our Expertise',
         path: '/#serviceOverview',
         component:  defineAsyncComponent(() => import('@/components/ServiceOverview.vue')),
-        showInNav: true
+        showInNav: true,
+        menuIcon: 'Award'
     },
     {
         id: 'whyus',
         label: 'Why Us',
         path: '/#whyus',
         component:  defineAsyncComponent(() => import('@/components/WhyUs.vue')),
-        showInNav: true
+        showInNav: true,
+        menuIcon: 'ThumbsUp'
     },
     {
         id: 'services',
         label: 'Areas of Expertise',
         path: '/#services',
         component:  defineAsyncComponent(() => import('@/components/ServiceGrid.vue')),
-        showInNav: false
+        showInNav: false,
+        menuIcon: 'Home'
     },
     {
         id: 'about',
         label: 'About',
         path: '/#about',
         component:  defineAsyncComponent(() => import('@/components/AboutUs.vue')),
-        showInNav: true
+        showInNav: true,
+        menuIcon: 'Info'
     },
     {
         id: 'contact',
         label: 'Contact Us',
         path: '/#contact',
         component:  defineAsyncComponent(() => import('@/components/Contact.vue')),
-        showInNav: false
+        showInNav: false,
+        menuIcon: 'Home'
     }
 ]

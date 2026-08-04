@@ -37,7 +37,7 @@ defineProps({
             </h3>
 
             <div class="mt-8 flex items-center justify-center gap-x-6">
-                <a :href="callToActionButtonURL" class="inline-flex items-center justify-center gap-2 rounded-xl bg-coral px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:-translate-y-0.5 hover:shadow-lift">
+                <a :href="callToActionButtonURL" target="_blank" class="inline-flex items-center justify-center gap-2 rounded-xl bg-coral px-4 py-3 text-sm font-semibold text-white shadow-sm transition-all duration-150 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 hover:-translate-y-0.5 hover:shadow-lift">
                     {{ callToActionButtonText }}
                     <component :is="(LucideIcons as Record<string, any>)[callToActionButtonIcon]" class="h-4 w-4" />
                 </a>

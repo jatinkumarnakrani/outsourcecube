@@ -32,7 +32,7 @@ defineProps({
                     <span class=" relative flex h-12 w-12 items-center justify-center rounded-xl text-brand-deep">
                         <!-- <component :is="(LucideIcons as Record<string, any>)[card.icon]" class="w-12 h-12 mx-auto text-gray-400 sm:mx-0" /> -->
                         <FloatingCube
-                            :color="['#a78bfa', '#818cf8']"
+                            :color="card.cubeColor"
                             :animation-delay="-5"
                             :size="80"
                         />

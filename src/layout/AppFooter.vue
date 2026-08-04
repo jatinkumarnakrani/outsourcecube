@@ -35,7 +35,7 @@ function getImagePath(name: string): string {
                     <h3 class="text-sm font-extrabold uppercase tracking-[0.18em] text-accent border-b-1 border-accent pb-2 mb-2 inline-block md:block ">{{ website.footer.socialMedia.title}}</h3>
                     <div class="flex items-center space-x-3 my-4">
                         <template v-for="(media, listIndex) in website.footer.socialMedia.list" :key="listIndex">
-                            <a :href="media.path" class="router-link-active router-link-exact-active hover:-translate-y-0.5 hover:shadow-lift">
+                            <a :href="media.path" target="_blank" class="router-link-active router-link-exact-active hover:-translate-y-0.5 hover:shadow-lift">
                                 <img :src="getImagePath(media.icon)" :alt="media.name" class="h-10 w-10" />
                             </a>
                         </template>
