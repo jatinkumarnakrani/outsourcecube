@@ -22,7 +22,7 @@ function getImagePath(name: string): string {
     <Contact id="contact-us" :sectionVisible="true">
         <CallToAction 
             :heading="contactUs.callToAction.title"
-            :introduction="contactUs.callToAction.title"
+            :introduction="contactUs.callToAction.intro"
             :callToActionButtonText="contactUs.callToAction.button.label"
             :callToActionButtonURL="contactUs.callToAction.button.link"
             :callToActionButtonIcon="contactUs.callToAction.button.icon"

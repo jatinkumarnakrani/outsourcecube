@@ -46,7 +46,7 @@ function getImagePath(name: string): string {
     />
     <CallToAction 
         :heading="website.callToAction.title"
-        :introduction="website.callToAction.title"
+        :introduction="website.callToAction.intro"
         :callToActionButtonText="website.callToAction.button.label"
         :callToActionButtonURL="website.callToAction.button.link"
         :callToActionButtonIcon="website.callToAction.button.icon"

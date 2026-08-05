@@ -50,7 +50,7 @@ const whyChooseUsDetails = {
     />
     <CallToAction 
         :heading="digitalMarketing.callToAction.title"
-        :introduction="digitalMarketing.callToAction.title"
+        :introduction="digitalMarketing.callToAction.intro"
         :callToActionButtonText="digitalMarketing.callToAction.button.label"
         :callToActionButtonURL="digitalMarketing.callToAction.button.link"
         :callToActionButtonIcon="digitalMarketing.callToAction.button.icon"

@@ -57,7 +57,7 @@ const whoWeWorkWithDetails = {
     />
     <CallToAction 
         :heading="socialMedia.callToAction.title"
-        :introduction="socialMedia.callToAction.title"
+        :introduction="socialMedia.callToAction.intro"
         :callToActionButtonText="socialMedia.callToAction.button.label"
         :callToActionButtonURL="socialMedia.callToAction.button.link"
         :callToActionButtonIcon="socialMedia.callToAction.button.icon"
