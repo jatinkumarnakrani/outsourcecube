@@ -49,48 +49,48 @@ function getImagePath(name: string): string {
                     <FloatingCube
                         top="5%"
                         left="0"
-                        :size="44"
-                        :color="['#a78bfa', '#818cf8']"
+                        :size="60"
+                        :color="['#ff1f20', '#ff333c']"
                         :animation-delay="-5"
                         :classNames="['shape-float-a']"
                     />
                     <FloatingCube
                         top="15%"
                         right="5%"
-                        :size="28"
-                        :color="['#38bdf8', '#0ea5e9']"
+                        :size="38"
+                        :color='["#dfa201", "#ffc509"]'
                         :animation-delay="-5"
                         :classNames="['shape-float-b']"
                     />
                     <FloatingCube
                         bottom="20%"
                         left="5%"
-                        :size="42"
-                        :color="['#34d399', '#34d399']"
+                        :size="60"
+                        :color="['#febe01']"
                         :animation-delay="-5"
                         :classNames="['shape-float-c']"
                     />
                     <FloatingCube
                         bottom="10%"
                         right="8%"
-                        :size="40"
-                        :color="['#f472b6', '#ec4899']"
+                        :size="38"
+                        :color="['#ff1f20', '#ff333c']"
                         :animation-delay="-3"
                         :classNames="['shape-float-a']"
                     />
                     <FloatingCube
                         top="50%"
                         left="-2%"
-                        :size="36"
-                        :color="['#fbbf24']"
+                        :size="38"
+                        :color='["#01665f", "#02a69d"]'
                         :animation-delay="-5"
                         :classNames="['shape-float-b']"
                     />
                     <FloatingCube
                         top="35%"
                         right="2%"
-                        :size="30"
-                        :color="['#a78bfa']"
+                        :size="60"
+                        :color="['#0c6c5a']"
                         :animation-delay="-2"
                         :classNames="['shape-float-c']"
                     />
