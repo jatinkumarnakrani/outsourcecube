@@ -28,6 +28,10 @@ const aosAnimation: AosAttrs[] = [
         'data-aos': 'fade-down',
         'data-aos-delay':'200'
     },
+    {
+        'data-aos': 'fade-up',
+        'data-aos-delay':'200'
+    },
 ];
 </script>
 <template>
@@ -39,7 +43,7 @@ const aosAnimation: AosAttrs[] = [
                 <p class="mt-5 text-base leading-7 text-muted" data-aos="fade-up" data-aos-delay="300">{{serviceOverview.description}}</p>
             </div>
 
-            <div class="mt-12 grid gap-5 md:grid-cols-3">
+            <div class="mt-12 grid gap-5 md:grid-cols-4">
                 <article v-for="(service, index) in serviceOverview.cards" class="service-card rounded-[var(--radius)] p-7 transition hover:-translate-y-1 hover:shadow-lift" :key="service.title" v-bind="aosAnimation[index % aosAnimation.length]">
                     <span class="grid h-12 w-12 place-items-center rounded-2xl" :class="service.iconClass">
                         <component :is="(LucideIcons as Record<string, any>)[service.icon]" />

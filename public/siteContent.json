@@ -81,7 +81,13 @@
                         "title": "Digital Marketing & Ads",
                         "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
                         "icon": "TrendingUp",
-                        "iconClass": "bg-mint/45 text-brand-deep    "
+                        "iconClass": "bg-mint/45 text-brand-deep"
+                    },
+                    {
+                        "title": "Website Development",
+                        "description": "Accelerate business growth through data-driven digital marketing, Google & Meta Ads, SEO, and performance-focused campaigns designed to generate quality leads and maximize ROI.",
+                        "icon": "CodeXml",
+                        "iconClass": "bg-coral/10 text-coral"
                     }
                 ]
             },
