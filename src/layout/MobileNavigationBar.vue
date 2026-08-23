@@ -37,11 +37,11 @@ const isMenuOpen = ref(false);
                 <NavDropdown title="Our Services" :services="services" v-model:isMainMenuOpen="isMenuOpen" />
 
                 <RouterLink :to="hipaaCompliance[0].path" @click="isMenuOpen = false" :class="['flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm font-medium transition-all duration-150 group relative text-slate-400 hover:text-slate-400 hover:bg-white/5',{active: activeTab === 'hipaaCompliance'}]">
-                    <component :is="(LucideIcons as Record<string, any>)[hipaaCompliance[0].props.menuIcon]" class="h-4 w-4" />
+                    <component :is="(LucideIcons as Record<string, any>)[hipaaCompliance[0].meta.menuIcon as string]" class="h-4 w-4" />
                     {{ hipaaCompliance[0].name}}
                 </RouterLink>
                 <RouterLink :to="contactUs[0].path" @click="isMenuOpen = false" :class="['mt-1 inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lift']">
-                    <component :is="(LucideIcons as Record<string, any>)[contactUs[0].props.menuIcon]" class="h-4 w-4" />
+                    <component :is="(LucideIcons as Record<string, any>)[contactUs[0].meta.menuIcon as string]" class="h-4 w-4" />
                     {{ contactUs[0].name}}
                 </RouterLink>
             </div>

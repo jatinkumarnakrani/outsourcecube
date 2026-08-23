@@ -19,12 +19,12 @@ function getImagePath(name: string): string {
 <template>
     <section :id="id" class="section-pad bg-hero-glow">
         <div class="container-shell grid items-center gap-12 lg:grid-cols-[0.9fr_1.1fr]">
-            <div class="relative min-h-[420px]">
-                <img :src="getImagePath(whyUs.image)" :alt="whyUs.imageAlt" />
+            <div class="relative min-h-[420px]" data-aos="flip-right">
+                <img :src="getImagePath(whyUs.image)" :alt="whyUs.imageAlt" class="max-w-[75%]" />
                 <FloatingCube top="-20px" right="-20px" :size="80" color="#fab500"  :animation-delay="-5" />
             </div>
-            <div>
-                <Badge :class="['bg-surface text-brand-deep']">{{whyUs.badge}}</Badge>
+            <div data-aos="flip-left">
+                <Badge :className="['bg-surface text-brand-deep']">{{whyUs.badge}}</Badge>
                 <h2 class="mt-5 font-display text-4xl font-extrabold text-ink sm:text-5xl">{{whyUs.title }}</h2>
                 <p class="mt-6 max-w-2xl text-base leading-8 text-muted">{{ whyUs.description }}</p>
 

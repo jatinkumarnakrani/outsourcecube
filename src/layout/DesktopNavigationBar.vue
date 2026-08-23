@@ -69,7 +69,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                                 <img
                                     v-for="(service, index) in services"
                                     :key="service.name + '-img'"
-                                    :src="service.props.icon"
+                                    :src="service.meta.icon"
                                     class="img-cover absolute inset-0 w-full object-cover transition-opacity duration-300 self-center"
                                     :class="{ 'active opacity-100': activeIndex === index, 'opacity-0': activeIndex !== index }"
                                     alt=""
@@ -86,7 +86,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                                         @mouseenter="activeIndex = index"
                                     >
                                         <span class="font-bold text-gray-900 mb-8">{{ service.name }}</span>
-                                        <span class="mt-1 block max-w-xs text-sm text-gray-500">{{ service.props.description }}</span>
+                                        <span class="mt-1 block max-w-xs text-sm text-gray-500">{{ service.meta.description }}</span>
                                     </RouterLink>
                                 </div>
                             </div>
@@ -101,7 +101,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
         </RouterLink>
     </div>
     <RouterLink :to="contactUs[0].path" :class="['hidden lg:inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lift']">
-        <component :is="(LucideIcons as Record<string, any>)[contactUs[0].props.menuIcon]" class="h-4 w-4" />
+        <component :is="(LucideIcons as Record<string, any>)[contactUs[0].meta.menuIcon as string]" class="h-4 w-4" />
         {{ contactUs[0].name}}
     </RouterLink>
 </template>

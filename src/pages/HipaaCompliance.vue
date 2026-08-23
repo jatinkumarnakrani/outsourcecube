@@ -20,18 +20,18 @@ function getImagePath(name: string): string {
     />
     <section class="page-section">
         <div class="container-shell">
-            <p class="section-kicker">{{ hipaaCompliance.eyebrow }}</p>
-            <h2 class="section-title">{{ hipaaCompliance.heading }}</h2>
-            <p class="section-copy">{{ hipaaCompliance.description }}</p>
+            <p class="section-kicker" data-aos="zoom-in-up" data-aos-delay="200">{{ hipaaCompliance.eyebrow }}</p>
+            <h2 class="section-title" data-aos="zoom-in-up" data-aos-delay="300">{{ hipaaCompliance.heading }}</h2>
+            <p class="section-copy" data-aos="zoom-in-up" data-aos-delay="400">{{ hipaaCompliance.description }}</p>
 
             <div class="card-grid">
-                <article class="info-card" v-for="card in hipaaCompliance.safeguards">
+                <article class="info-card" v-for="(card, index) in hipaaCompliance.safeguards" data-aos="flip-left" :data-aos-delay="(index+4) * 100">
                     <span class="icon-badge"><component :is="(LucideIcons as Record<string, any>)[card.icon]" /></span>
                     <h3>{{ card.title }}</h3>
                     <p>{{ card.text }}</p>
                 </article>
             </div>
-            <div class="process-panel">
+            <div class="process-panel" data-aos="fade-up" data-aos-delay="400">
                 <div>
                     <p class="section-kicker">{{ hipaaCompliance.process.eyebrow}}</p>
                     <h2 class="section-title">{{ hipaaCompliance.process.heading}}</h2>

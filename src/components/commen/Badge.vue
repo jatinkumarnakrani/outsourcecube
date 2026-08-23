@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps({
-    class: {
+    className: {
         type: Array,
         required: false,
         default: []
@@ -8,7 +8,7 @@ defineProps({
 })
 </script>
 <template>
-    <span class="eyebrow rounded-full px-4 py-2" :class="class">
+    <span class="eyebrow rounded-full px-4 py-2" :class="className">
         <slot></slot>
     </span>
 </template>

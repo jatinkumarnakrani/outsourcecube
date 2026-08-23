@@ -6,6 +6,8 @@ import socialMediaManagementIcon from '/images/Social_Media_Management_Icon_2.pn
 import websiteDevelopmentIcon from '/images/Website_Development_Icon.png'
 import digitalMarketingIcon from '/images/Digital_Marketing_Icon.png'
 
+import { h } from 'vue'
+
 
 export interface SectionConfig {
   id:        string
@@ -21,7 +23,7 @@ export const hipaaCompliance: RouteRecordRaw[] = [
         path: '/hipaa-compliance',
         name: 'HIPAA Compliance',
         component: () => import('@/pages/HipaaCompliance.vue'),
-        props: {
+        meta: {
             menuIcon: 'ShieldCheck'
         }
     }
@@ -45,7 +47,7 @@ export const contactUs: RouteRecordRaw[] = [
         path: '/contact',
         name: 'Contact Us',
         component: () => import('@/pages/ContactUs.vue'),
-        props: {
+        meta: {
             menuIcon: 'MessageCircle'
         }
     }
@@ -55,7 +57,7 @@ export const services: RouteRecordRaw[] = [
         path: '/ABATherapyOperations',
         name: 'ABA Administrative & Operations',
         component: () => import('@/pages/services/ABAAdministrativeOperations.vue'),
-        props: {
+        meta: {
             icon: ABATherapyOperations,
             description: 'Streamlining operations with reliable administrative support.',
             menuIcon: 'ClipboardList'
@@ -65,7 +67,7 @@ export const services: RouteRecordRaw[] = [
         path: '/socialMediaManagement',
         name: 'Social Media Management',
         component: () => import('@/pages/services/SocialMediaManagement.vue'),
-        props: {
+        meta: {
             icon: socialMediaManagementIcon,
             description: 'Building your brand with engaging digital content.',
             menuIcon: 'Share2'
@@ -75,7 +77,7 @@ export const services: RouteRecordRaw[] = [
         path: '/digitalMarketing',
         name: 'Digital Marketing',
         component: () => import('@/pages/services/DigitalMarketing.vue'),
-        props: {
+        meta: {
             icon: digitalMarketingIcon,
             description: 'Driving measurable growth through smart digital strategies.',
             menuIcon: 'Megaphone'
@@ -85,7 +87,7 @@ export const services: RouteRecordRaw[] = [
         path: '/websiteDevelopment',
         name: 'Website Development',
         component: () => import('@/pages/services/WebsiteDevelopment.vue'),
-        props: {
+        meta: {
             icon: websiteDevelopmentIcon,
             description: 'Building modern websites that drive business success.',
             menuIcon: 'Code'

@@ -13,8 +13,8 @@ const contactUs = computed(() => websiteStore.content.pages.contactUs);
 <template>
     <section :id="id" class="section-pad bg-surface">
       <div class="container-shell">
-        <div class="grid overflow-hidden rounded-[calc(var(--radius)*1.4)] bg-white shadow-soft lg:grid-cols-[0.9fr_1.1fr]">
-          <div class="bg-brand-deep p-8 text-white sm:p-10 lg:p-12">
+        <div class="grid overflow-hidden rounded-[calc(var(--radius)*1.4)] lg:grid-cols-[0.9fr_1.1fr]">
+          <div class="bg-brand-deep p-8 text-white sm:p-10 lg:p-12" data-aos="zoom-in-right" data-aos-delay="300">
             <span class="inline-flex rounded-full bg-white/10 px-4 py-2 text-xs font-extrabold uppercase tracking-[0.18em] text-accent">{{ contactUs.badge }}</span>
             <h2 class="mt-6 font-display text-4xl font-extrabold sm:text-5xl"> {{ contactUs.title }}</h2>
             <p class="mt-5 leading-8 text-white/74">{{ contactUs.description }}</p>
@@ -32,7 +32,7 @@ const contactUs = computed(() => websiteStore.content.pages.contactUs);
             </div>
           </div>
 
-          <form class="grid gap-5 p-8 sm:grid-cols-2 sm:p-10 lg:p-12">
+          <form class="bg-white grid gap-5 p-8 sm:grid-cols-2 sm:p-10 lg:p-12" data-aos="zoom-in-left" data-aos-delay="300">
             <label class="block">
               <span class="text-xs font-extrabold uppercase tracking-[0.16em] text-muted">{{ contactUs.form.fields.firstname }}</span>
               <input class="mt-2 h-[52px] w-full rounded-2xl border border-line bg-paper px-4 py-4 text-sm outline-none transition focus:border-brand focus:ring-4 focus:ring-brand/10" placeholder="John" type="text">

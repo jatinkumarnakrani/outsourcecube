@@ -33,15 +33,15 @@ defineProps({
 <template>
     <section class="legal-hero">
         <div class="relative max-w-screen-xl px-4 sm:px-8 mx-auto grid grid-cols-12 gap-x-6 overflow-hidden py-8">
-            <div class="sm:block col-span-12 lg:col-span-6 self-center">
+            <div class="sm:block col-span-12 lg:col-span-6 self-center" data-aos="fade-right" data-aos-delay="200">
                 <div class="w-full" data-v-b444fb2c="">
-                    <img :src="img?.src" :style="img?.style" :class="img?.class"  />
+                    <img :src="img?.src" :style="img?.style" :class="img?.class">
                 </div>
             </div>
             <div class="col-span-12 lg:col-span-6 mt-12 xl:mt-10 space-y-4 sm:space-y-6 px-6 text-center sm:text-left">
-                <Badge v-if="badge" :class="['border border-white/15 bg-white/10 text-mint']">{{badge}}</Badge>
-                <h1 class="font-display font-extrabold leading-[1.05] text-[2.35rem] sm:text-5xl xl:text-[3.5rem] tracking-tight">{{ title}}</h1>
-                <p class="text-base sm:text-lg leading-relaxed text-white/75 max-w-xl mx-auto lg:mx-0">{{ intro }}</p>
+                <Badge v-if="badge" :className="['border border-white/15 bg-white/10 text-mint']" data-aos="fade-left" data-aos-delay="200">{{badge}}</Badge>
+                <h1 class="font-display font-extrabold leading-[1.05] text-[2.35rem] sm:text-5xl xl:text-[3.5rem] tracking-tight" data-aos="fade-left" data-aos-delay="300">{{ title}}</h1>
+                <p class="text-base sm:text-lg leading-relaxed text-white/75 max-w-xl mx-auto lg:mx-0" data-aos="fade-left" data-aos-delay="400">{{ intro }}</p>
             </div>
         </div>
     </section>

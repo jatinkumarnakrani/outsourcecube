@@ -26,8 +26,8 @@ defineProps({
             <div class="grid items-start gap-14 lg:grid-cols-12">
         
                 <!-- Left Content -->
-                <div class="lg:col-span-5">
-                    <Badge v-if="badge" :class="['bg-surface text-brand-deep']">{{badge}}</Badge>
+                <div class="lg:col-span-5" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                    <Badge v-if="badge" :className="['bg-surface text-brand-deep']">{{badge}}</Badge>
                     <h2 class="mt-6 font-display font-extrabold text-3xl sm:text-4xl lg:text-5xl leading-tight tracking-tight text-ink max-w-xl">{{ heading }}</h2>
                     <p class="mt-6 max-w-xl text-lg leading-8 text-muted">{{ paragraph }}</p>
                 </div>
@@ -35,7 +35,7 @@ defineProps({
                 <!-- Right Benefits -->
                 <div class="lg:col-span-7">
                     <ul class="grid gap-4 sm:grid-cols-2">
-                        <li class="group rounded-xl border border-line bg-surface/60 p-5 transition hover:-translate-y-1 hover:border-brand hover:shadow-card" v-for="card in cards">
+                        <li class="group rounded-xl border border-line bg-surface/60 p-5 transition hover:-translate-y-1 hover:border-brand hover:shadow-card" v-for="(card, index) in cards" :data-aos="(index % 2 ) === 0 ? 'fade-up' : 'fade-down'">
                             <div class="flex gap-4 items-center">
                                 <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-deep text-white text-sm">
                                     <Check class="p-1 shrink-0 text-white rounded-full" />

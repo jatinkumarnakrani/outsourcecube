@@ -21,18 +21,18 @@ function getImagePath(name: string): string {
     <section class="relative overflow-hidden pt-14 sm:pt-20 pb-0">
         <div class="container-shell grid items-center gap-12 lg:grid-cols-[1.02fr_0.98fr]">
             <div class="max-w-3xl">
-                <div class="chip mb-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold">
+                <div class="chip mb-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold" data-aos="fade-right" data-aos-delay="100">
                     <ShieldCheck class="h-4 w-4 text-brand" />
                     {{ hero.badge }}
                 </div>
-                <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl">
+                <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl" data-aos="fade-right" data-aos-delay="200">
                     {{ hero.headline.accent }}
                     <span class="block text-brand-deep">{{ hero.headline.outline }}</span>
                 </h1>
-                <p class="mt-7 max-w-2xl text-lg leading-8 text-muted">
+                <p class="mt-7 max-w-2xl text-lg leading-8 text-muted" data-aos="fade-right" data-aos-delay="300">
                     {{ hero.intro }}
                 </p>
-                <div class="mt-9 flex flex-col gap-4 sm:flex-row">
+                <div class="mt-9 flex flex-col gap-4 sm:flex-row" data-aos="fade-right" data-aos-delay="400">
                     <RouterLink :to="contactUs[0].path" :class="['inline-flex items-center justify-center gap-2 rounded-full bg-brand-deep px-7 py-4 text-sm font-extrabold text-white shadow-lift transition hover:-translate-y-0.5']">
                         {{ hero.conversection }}
                         <ArrowRight class="h-4 w-4" />
@@ -43,7 +43,7 @@ function getImagePath(name: string): string {
                     </RouterLink>
                 </div>
             </div>
-            <div class="hero-figure">
+            <div class="hero-figure" data-aos="fade-left">
                 <div class="person relative flex justify-center" aria-hidden="true">
                     <!-- Floating shapes -->
                     <FloatingCube
@@ -98,6 +98,8 @@ function getImagePath(name: string): string {
                         :src="getImagePath(hero.bannerImg)"
                         alt="Hero Image"
                         class="hero-image w-full max-w-md h-auto object-cover scale-x-[-1]"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="300"
                     />
                 </div>
             </div>

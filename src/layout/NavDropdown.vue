@@ -77,7 +77,7 @@ const isMainMenuOpen = defineModel<boolean>('isMainMenuOpen', { default: false }
               :class="{ 'text-gray-900 font-semibold': isActive(service.path) }"
               @click="isMainMenuOpen = false"
             >
-                <component :is="(LucideIcons as Record<string, any>)[service.props.menuIcon]" class="h-4 w-4" />
+                <component :is="(LucideIcons as Record<string, any>)[service.meta.menuIcon as string]" class="h-4 w-4" />
                 {{ service.name }}
                 </RouterLink>
           </li>

@@ -28,7 +28,7 @@ defineProps({
 })
 </script>
 <template>
-    <div class="container-shell my-10">
+    <div class="container-shell my-10" data-aos="fade-up" data-aos-delay="200">
         <div class="relative isolate overflow-hidden bg-brand-deep px-6 py-20 text-center sm:rounded-3xl sm:border sm:border-gray-100 sm:px-16 sm:shadow-sm">
             <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight text-white sm:text-4xl">{{ heading }}</h2>
 
