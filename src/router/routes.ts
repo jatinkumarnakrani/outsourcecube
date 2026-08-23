@@ -6,9 +6,6 @@ import socialMediaManagementIcon from '/images/Social_Media_Management_Icon_2.pn
 import websiteDevelopmentIcon from '/images/Website_Development_Icon.png'
 import digitalMarketingIcon from '/images/Digital_Marketing_Icon.png'
 
-import { h } from 'vue'
-
-
 export interface SectionConfig {
   id:        string
   label:     string

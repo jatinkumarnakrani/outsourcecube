@@ -33,7 +33,7 @@ function getImagePath(name: string): string {
                         </article>
                     </div>
                     <div class="expertise-art">
-                        <img :src="getImagePath(expertise.image)" :alt="expertise.imageAlt" />
+                        <img :src="getImagePath(expertise.image)" :alt="expertise.imageAlt" class="lg:scale-[1.3]" />
                     </div>
                     <div class="grid gap-5">
                         <article v-for="(service, index) in expertise.items.filter((s: any) => s.side === 'right')" :key="service.id" class="service-card rounded-[var(--radius)] p-6" :style="{ '--arc': service.arcX + 'px' }">

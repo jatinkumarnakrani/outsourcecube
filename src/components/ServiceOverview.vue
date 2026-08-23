@@ -3,6 +3,7 @@ import { computed } from "vue";
 import { useWebsiteStore } from "@/stores/website";
 import * as LucideIcons from '@lucide/vue';
 import Badge from '@/components/commen/Badge.vue'
+import { services } from '@/router/routes'
 
 const props = defineProps({
   id: String,
@@ -45,11 +46,13 @@ const aosAnimation: AosAttrs[] = [
 
             <div class="mt-12 grid gap-5 md:grid-cols-4">
                 <article v-for="(service, index) in serviceOverview.cards" class="service-card rounded-[var(--radius)] p-7 transition hover:-translate-y-1 hover:shadow-lift" :key="service.title" v-bind="aosAnimation[index % aosAnimation.length]">
-                    <span class="grid h-12 w-12 place-items-center rounded-2xl" :class="service.iconClass">
-                        <component :is="(LucideIcons as Record<string, any>)[service.icon]" />
-                    </span>
-                    <h3 class="mt-6 text-xl font-extrabold text-brand-deep">{{ service.title }}</h3>
-                    <p class="mt-3 leading-7 text-muted">{{ service.description }}</p>
+                    <RouterLink :to="services[index].path">
+                        <span class="grid h-12 w-12 place-items-center rounded-2xl" :class="service.iconClass">
+                            <component :is="(LucideIcons as Record<string, any>)[service.icon]" />
+                        </span>
+                        <h3 class="mt-6 text-xl font-extrabold text-brand-deep">{{ service.title }}</h3>
+                        <p class="mt-3 leading-7 text-muted">{{ service.description }}</p>
+                    </RouterLink>
                 </article>
             </div>
         </div>

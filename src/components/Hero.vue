@@ -97,7 +97,7 @@ function getImagePath(name: string): string {
                     <img
                         :src="getImagePath(hero.bannerImg)"
                         alt="Hero Image"
-                        class="hero-image w-full max-w-md h-auto object-cover scale-x-[-1]"
+                        class="hero-image w-full max-w-md h-auto object-cover"
                         data-aos="zoom-in-up"
                         data-aos-delay="300"
                     />
