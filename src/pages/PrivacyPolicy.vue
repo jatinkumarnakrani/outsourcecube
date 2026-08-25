@@ -10,23 +10,27 @@ const website = computed(() => websiteStore.content);
 const contact:any = HomePageSection.find((s) => s.id === 'contact');
 </script>
 <template>
-    <ShellHeroLegel :badge="website.pages.privacyPolicy.badge" :title="website.pages.privacyPolicy.title" :intro="website.pages.privacyPolicy.intro" />
+    <ShellHeroLegel
+        :badge="website?.pages.privacyPolicy.badge ?? ''"
+        :title="website?.pages.privacyPolicy.title ?? ''"
+        :intro="website?.pages.privacyPolicy.intro ?? ''"
+    />
     <section class="page-section">
       <div class="container-shell legal-layout">
         <aside class="legal-sidebar">
           <small>Last updated</small>
-          <strong>{{ website.pages.privacyPolicy.updated }}</strong>
-          <RouterLink :to="contact.path" >{{ website.pages.privacyPolicy.contactLabel }}</RouterLink>
+          <strong>{{ website?.pages.privacyPolicy.updated }}</strong>
+          <RouterLink :to="contact.path" >{{ website?.pages.privacyPolicy.contactLabel }}</RouterLink>
         </aside>
 
         <div class="policy-stack">
-          <article class="policy-card" v-for="sec in website.pages.privacyPolicy.sections">
+          <article class="policy-card" v-for="sec in website?.pages.privacyPolicy.sections">
             <h2>{{ sec.title }}</h2>
             <p>{{ sec.body }}</p>
           </article>
           <div class="notice-card">
             <component :is="(LucideIcons as Record<string, any>)['Info']" />
-            <p>{{ website.pages.privacyPolicy.notice }}</p>
+            <p>{{ website?.pages.privacyPolicy.notice }}</p>
           </div>
         </div>
       </div>

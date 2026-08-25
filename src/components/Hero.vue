@@ -6,16 +6,16 @@ import { HomePageSection, contactUs } from '@/router/routes'
 import FloatingCube from '@/components/commen/Floatingcube.vue';
 
 const websiteStore = useWebsiteStore();
-const hero = computed(() => websiteStore.content.pages.home.hero);
+const hero = computed(() => websiteStore.content?.pages.home.hero);
 const services:any = HomePageSection.find((s) => s.id === 'services');
-
+const tickers = computed(() => [
+  ...(hero.value?.ticker ?? []),
+  ...(hero.value?.ticker ?? []),
+  ...(hero.value?.ticker ?? []),
+])
 const props = defineProps({
   id: String,
 })
-
-function getImagePath(name: string): string {
-  return `${import.meta.env.BASE_URL}images/${name}`
-}
 </script>
 <template>
     <section class="relative overflow-hidden pt-14 sm:pt-20 pb-0">
@@ -23,22 +23,22 @@ function getImagePath(name: string): string {
             <div class="max-w-3xl">
                 <div class="chip mb-7 inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-bold" data-aos="fade-right" data-aos-delay="100">
                     <ShieldCheck class="h-4 w-4 text-brand" />
-                    {{ hero.badge }}
+                    {{ hero?.badge }}
                 </div>
                 <h1 class="font-display text-5xl font-extrabold leading-[1.02] tracking-normal text-ink sm:text-6xl lg:text-7xl" data-aos="fade-right" data-aos-delay="200">
-                    {{ hero.headline.accent }}
-                    <span class="block text-brand-deep">{{ hero.headline.outline }}</span>
+                    {{ hero?.headline.accent }}
+                    <span class="block text-brand-deep">{{ hero?.headline.outline }}</span>
                 </h1>
                 <p class="mt-7 max-w-2xl text-lg leading-8 text-muted" data-aos="fade-right" data-aos-delay="300">
-                    {{ hero.intro }}
+                    {{ hero?.intro }}
                 </p>
                 <div class="mt-9 flex flex-col gap-4 sm:flex-row" data-aos="fade-right" data-aos-delay="400">
-                    <RouterLink :to="contactUs[0].path" :class="['inline-flex items-center justify-center gap-2 rounded-full bg-brand-deep px-7 py-4 text-sm font-extrabold text-white shadow-lift transition hover:-translate-y-0.5']">
-                        {{ hero.conversection }}
+                    <RouterLink :to="contactUs[0]?.path ?? ''" :class="['inline-flex items-center justify-center gap-2 rounded-full bg-brand-deep px-7 py-4 text-sm font-extrabold text-white shadow-lift transition hover:-translate-y-0.5']">
+                        {{ hero?.conversection }}
                         <ArrowRight class="h-4 w-4" />
                     </RouterLink>
                     <RouterLink :to="services.path" :class="['inline-flex items-center justify-center gap-2 rounded-full border border-line bg-white px-7 py-4 text-sm font-extrabold text-brand-deep transition hover:border-brand hover:text-brand']">
-                        {{hero.services }}
+                        {{hero?.services }}
                         <LayoutGrid class="h-4 w-4" />
                     </RouterLink>
                 </div>
@@ -95,7 +95,7 @@ function getImagePath(name: string): string {
                         :classNames="['shape-float-c']"
                     />
                     <img
-                        :src="getImagePath(hero.bannerImg)"
+                        :src="websiteStore.getImagePath(hero?.bannerImg)"
                         alt="Hero Image"
                         class="hero-image w-full max-w-md h-auto object-cover"
                         data-aos="zoom-in-up"
@@ -108,7 +108,7 @@ function getImagePath(name: string): string {
             <!-- Left fade -->
             <div class="absolute left-0 top-0 h-full w-20 z-10 pointer-events-none bg-gradient-to-r from-white to-transparent" />
             <div class="marquee-track flex w-max gap-5 text-xs font-extrabold uppercase tracking-[0.2em] text-white/88">
-                <span class="flex items-center gap-5" v-for="(item, index) in [...hero.ticker, ...hero.ticker, ...hero.ticker]" :key="`${item}-${index}`">
+                <span class="flex items-center gap-5" v-for="(item, index) in tickers" :key="`${item}-${index}`">
                     <b class="text-accent">+</b> {{ item }}
                 </span>
             </div>

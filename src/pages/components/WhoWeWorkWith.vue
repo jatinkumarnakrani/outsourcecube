@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
+import type { WhoWeWorkWithCard } from '@/types/website'
 import Badge from '@/components/commen/Badge.vue'
 defineProps({
     badge: {
@@ -14,7 +16,7 @@ defineProps({
         required: false,
     },
     cards: {
-        type: Array,
+        type: Array as PropType<WhoWeWorkWithCard[]>,
         required: false,
         default: () => [],
     },

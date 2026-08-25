@@ -9,10 +9,6 @@ const websiteStore = useWebsiteStore();
 const website = computed(() => websiteStore.content);
 const contact:any = HomePageSection.find((s) => s.id === 'contact');
 
-function getImagePath(name: string): string {
-    return `${import.meta.env.BASE_URL}images/${name}`
-}
-
 const isScrolled = ref(false)
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 10
@@ -33,7 +29,7 @@ onUnmounted(() => {
     ]">
         <nav class="container-shell flex h-20 items-center justify-between gap-6" :class="{'border-b border-sky-100':!isScrolled}">
             <RouterLink :to="'/'" :class="['flex','items-center','gap-3']">
-                <img class="brand-logo" :src="getImagePath(website.brand.logoImage)" :alt="website.brand.logoAlt" />
+                <img class="brand-logo" :src="websiteStore.getImagePath(website?.brand.logoImage)" :alt="website?.brand.logoAlt" />
             </RouterLink>
             <DesktopNavigationBar />
             <MobileNavigationBar />

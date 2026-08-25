@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
+import type { ProcessStep } from '@/types/website'
 import Badge from '@/components/commen/Badge.vue'
 defineProps({
     badge: {
@@ -10,7 +12,7 @@ defineProps({
         required: false,
     },
     steps: {
-        type: Array,
+        type: Array as PropType<ProcessStep[]>,
         required: false,
         default: () => []
     }

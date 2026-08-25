@@ -10,23 +10,27 @@ const website = computed(() => websiteStore.content);
 const contact:any = HomePageSection.find((s) => s.id === 'contact');
 </script>
 <template>
-    <ShellHeroLegel :badge="website.pages.termsConditions.badge" :title="website.pages.termsConditions.title" :intro="website.pages.termsConditions.intro" />
+    <ShellHeroLegel
+        :badge="website?.pages.termsConditions.badge ?? ''"
+        :title="website?.pages.termsConditions.title ?? ''"
+        :intro="website?.pages.termsConditions.intro ?? ''"
+    />
     <section class="page-section">
       <div class="container-shell legal-layout">
         <aside class="legal-sidebar">
           <small>Last updated</small>
-          <strong>{{ website.pages.termsConditions.updated }}</strong>
-          <RouterLink :to="contact.path" >{{ website.pages.termsConditions.contactLabel }}</RouterLink>
+          <strong>{{ website?.pages.termsConditions.updated }}</strong>
+          <RouterLink :to="contact.path" >{{ website?.pages.termsConditions.contactLabel }}</RouterLink>
         </aside>
 
         <div class="policy-stack">
-          <article class="policy-card" v-for="sec in website.pages.termsConditions.sections">
+          <article class="policy-card" v-for="sec in website?.pages.termsConditions.sections">
             <h2>{{ sec.title }}</h2>
             <p>{{ sec.body }}</p>
           </article>
           <div class="notice-card">
             <component :is="(LucideIcons as Record<string, any>)['Info']" />
-            <p>{{ website.pages.termsConditions.notice }} </p>
+            <p>{{ website?.pages.termsConditions.notice }} </p>
           </div>
         </div>
       </div>

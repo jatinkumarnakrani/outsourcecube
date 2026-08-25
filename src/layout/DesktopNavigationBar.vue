@@ -2,7 +2,6 @@
 import { storeToRefs } from 'pinia'
 import { useWebsiteStore } from "@/stores/website";
 import { HomePageSection, hipaaCompliance, contactUs, services } from '@/router/routes'
-import { MessageCircle, ChevronDown } from "@lucide/vue";
 import * as LucideIcons from '@lucide/vue';
 
 const websiteStore = useWebsiteStore();
@@ -68,8 +67,8 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                             <div class="nav_drop-covers w-80 relative">
                                 <img
                                     v-for="(service, index) in services"
-                                    :key="service.name + '-img'"
-                                    :src="service.meta.icon"
+                                    :key="service.name as string + '-img'"
+                                    :src="(service.meta?.icon as string) ?? undefined"
                                     class="img-cover absolute inset-0 w-full object-cover transition-opacity duration-300 self-center"
                                     :class="{ 'active opacity-100': activeIndex === index, 'opacity-0': activeIndex !== index }"
                                     alt=""
@@ -86,7 +85,7 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                                         @mouseenter="activeIndex = index"
                                     >
                                         <span class="font-bold text-gray-900 mb-8">{{ service.name }}</span>
-                                        <span class="mt-1 block max-w-xs text-sm text-gray-500">{{ service.meta.description }}</span>
+                                        <span class="mt-1 block max-w-xs text-sm text-gray-500">{{ service.meta?.description }}</span>
                                     </RouterLink>
                                 </div>
                             </div>
@@ -95,14 +94,14 @@ onBeforeUnmount(() => document.removeEventListener('click', handleClickOutside))
                 </div>
             </Transition>
         </div>
-        <RouterLink :to="hipaaCompliance[0].path" :class="['transition','hover:text-brand-deep group', 'text-brand-deep', 'relative', {active: activeTab === 'hipaaCompliance'}]">
-            {{ hipaaCompliance[0].name}}
+        <RouterLink :to="hipaaCompliance[0]?.path ?? ''" :class="['transition','hover:text-brand-deep group', 'text-brand-deep', 'relative', {active: activeTab === 'hipaaCompliance'}]">
+            {{ hipaaCompliance[0]?.name}}
             <span class="absolute left-0 -bottom-1 h-0.5 w-full bg-brand-deep scale-x-0 group-hover:scale-x-100 origin-left transition-transform duration-300"></span>
         </RouterLink>
     </div>
-    <RouterLink :to="contactUs[0].path" :class="['hidden lg:inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lift']">
-        <component :is="(LucideIcons as Record<string, any>)[contactUs[0].meta.menuIcon as string]" class="h-4 w-4" />
-        {{ contactUs[0].name}}
+    <RouterLink :to="contactUs[0]?.path ?? ''" :class="['hidden lg:inline-flex items-center gap-2 rounded-full bg-coral px-5 py-3 text-sm font-extrabold text-white shadow-sm transition hover:-translate-y-0.5 hover:shadow-lift']">
+        <component :is="(LucideIcons as Record<string, any>)[contactUs[0]?.meta?.menuIcon as string]" class="h-4 w-4" />
+        {{ contactUs[0]?.name}}
     </RouterLink>
 </template>
 <style scoped>

@@ -5,27 +5,23 @@ import { computed } from "vue";
 import { useWebsiteStore } from "@/stores/website";
 
 const websiteStore = useWebsiteStore();
-const hipaaCompliance = computed(() => websiteStore.content.pages.hipaaCompliance);
-
-function getImagePath(name: string): string {
-  return `${import.meta.env.BASE_URL}images/${name}`
-}
+const hipaaCompliance = computed(() => websiteStore.content?.pages.hipaaCompliance);
 </script>
 <template>
     <ShellHeroLegel
-        :badge="hipaaCompliance.badge"
-        :title="hipaaCompliance.title"
-        :intro="hipaaCompliance.intro"
-        :img="{ src: getImagePath(hipaaCompliance.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
+        :badge="hipaaCompliance?.badge ?? ''"
+        :title="hipaaCompliance?.title ?? ''"
+        :intro="hipaaCompliance?.intro ?? ''"
+        :img="{ src: websiteStore.getImagePath(hipaaCompliance?.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
     />
     <section class="page-section">
         <div class="container-shell">
-            <p class="section-kicker" data-aos="zoom-in-up" data-aos-delay="200">{{ hipaaCompliance.eyebrow }}</p>
-            <h2 class="section-title" data-aos="zoom-in-up" data-aos-delay="300">{{ hipaaCompliance.heading }}</h2>
-            <p class="section-copy" data-aos="zoom-in-up" data-aos-delay="400">{{ hipaaCompliance.description }}</p>
+            <p class="section-kicker" data-aos="zoom-in-up" data-aos-delay="200">{{ hipaaCompliance?.eyebrow }}</p>
+            <h2 class="section-title" data-aos="zoom-in-up" data-aos-delay="300">{{ hipaaCompliance?.heading }}</h2>
+            <p class="section-copy" data-aos="zoom-in-up" data-aos-delay="400">{{ hipaaCompliance?.description }}</p>
 
             <div class="card-grid">
-                <article class="info-card" v-for="(card, index) in hipaaCompliance.safeguards" data-aos="flip-left" :data-aos-delay="(index+4) * 100">
+                <article class="info-card" v-for="(card, index) in hipaaCompliance?.safeguards" data-aos="flip-left" :data-aos-delay="(index+4) * 100">
                     <span class="icon-badge"><component :is="(LucideIcons as Record<string, any>)[card.icon]" /></span>
                     <h3>{{ card.title }}</h3>
                     <p>{{ card.text }}</p>
@@ -33,11 +29,11 @@ function getImagePath(name: string): string {
             </div>
             <div class="process-panel" data-aos="fade-up" data-aos-delay="400">
                 <div>
-                    <p class="section-kicker">{{ hipaaCompliance.process.eyebrow}}</p>
-                    <h2 class="section-title">{{ hipaaCompliance.process.heading}}</h2>
+                    <p class="section-kicker">{{ hipaaCompliance?.process.eyebrow}}</p>
+                    <h2 class="section-title">{{ hipaaCompliance?.process.heading}}</h2>
                 </div>
                 <ol class="process-list">
-                    <li v-for="(step, index) in hipaaCompliance.process.steps">
+                    <li v-for="(step, index) in hipaaCompliance?.process.steps">
                         <strong>{{ String(index+1).padStart(2, '0') }}</strong>
                         <span>{{ step }}</span>
                     </li>

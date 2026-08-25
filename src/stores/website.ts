@@ -1,8 +1,9 @@
 import { defineStore } from "pinia";
 import { ref } from 'vue';
+import type { WebsiteContent } from '@/types/website'
 
 export const useWebsiteStore = defineStore('website', () => {
-    const content = ref<Record<string, unknown> | null>(null)
+    const content = ref<WebsiteContent | null>(null)
     const loading = ref(false)
     const error = ref<string | null>(null)
     const initialized = ref(false)
@@ -19,7 +20,7 @@ export const useWebsiteStore = defineStore('website', () => {
                 throw new Error(`Unable to load website content: ${response.status} ${response.statusText}`)
             }
 
-            const data = await response.json()
+            const data: WebsiteContent = await response.json()
             content.value = data
             initialized.value = true
         } catch (err) {
@@ -35,6 +36,10 @@ export const useWebsiteStore = defineStore('website', () => {
         activeTab.value = tabName;
     }
 
+    function getImagePath(name: string | undefined): string {
+        return `${import.meta.env.BASE_URL}images/${name}`
+    }
+
     return {
         content,
         loading,
@@ -42,7 +47,8 @@ export const useWebsiteStore = defineStore('website', () => {
         initialized,
         activeTab,
         loadwebsiteContent,
-        setActiveTab
+        setActiveTab,
+        getImagePath
     }
 })
 

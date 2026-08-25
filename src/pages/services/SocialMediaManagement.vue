@@ -10,57 +10,49 @@ import CallToAction from "@/pages/components/CallToAction.vue";
 import WhoWeWorkWith from "@/pages/components/WhoWeWorkWith.vue";
 
 const websiteStore = useWebsiteStore();
-const socialMedia = computed(() => websiteStore.content.pages.service.socialMediaManagement);
-
-function getImagePath(name: string): string {
-  return `${import.meta.env.BASE_URL}images/${name}`
-}
-
-const whoWeWorkWithDetails = {
-    
-}
+const socialMedia = computed(() => websiteStore.content?.pages.service.socialMediaManagement);
 </script>
 <template>
     <ShellHeroLegel
-        :badge="socialMedia.badge"
-        :title="socialMedia.title"
-        :intro="socialMedia.intro"
-        :img="{ src: getImagePath(socialMedia.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
+        :badge="socialMedia?.badge ?? ''"
+        :title="socialMedia?.title ?? ''"
+        :intro="socialMedia?.intro ?? ''"
+        :img="{ src: websiteStore.getImagePath(socialMedia?.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
     />
     <WhyItMatters 
-        :badge="socialMedia.whyitMatters.badge"
-        :heading="socialMedia.whyitMatters.heading"
-        :paragraph1="socialMedia.whyitMatters.paragraph1"
-        :paragraph2="socialMedia.whyitMatters.paragraph2"
+        :badge="socialMedia?.whyitMatters.badge"
+        :heading="socialMedia?.whyitMatters.heading"
+        :paragraph1="socialMedia?.whyitMatters.paragraph1"
+        :paragraph2="socialMedia?.whyitMatters.paragraph2"
     />
     <WhatWeOffer 
-        :badge="socialMedia.whatWeOffer.badge"
-        :heading="socialMedia.whatWeOffer.heading"
-        :cards="socialMedia.whatWeOffer.cards"
+        :badge="socialMedia?.whatWeOffer.badge"
+        :heading="socialMedia?.whatWeOffer.heading"
+        :cards="socialMedia?.whatWeOffer.cards"
     />
     <WhyChooseUs
-        :badge="socialMedia.whyChooseUs.badge"
-        :heading="socialMedia.whyChooseUs.heading"
-        :paragraph="socialMedia.whyChooseUs.paragraph"
-        :cards="socialMedia.whyChooseUs.cards"
+        :badge="socialMedia?.whyChooseUs.badge"
+        :heading="socialMedia?.whyChooseUs.heading"
+        :paragraph="socialMedia?.whyChooseUs.paragraph"
+        :cards="socialMedia?.whyChooseUs.cards"
     />
     <ProcessWithSteps 
-        :badge="socialMedia.processWithSteps.badge"
-        :heading="socialMedia.processWithSteps.heading"
-        :steps="socialMedia.processWithSteps.steps"
+        :badge="socialMedia?.processWithSteps.badge"
+        :heading="socialMedia?.processWithSteps.heading"
+        :steps="socialMedia?.processWithSteps.steps"
     />
     <WhoWeWorkWith
-        :badge="socialMedia.whoWeWorkWith.badge"
-        :heading="socialMedia.whoWeWorkWith.heading"
-        :paragraph="socialMedia.whoWeWorkWith.paragraph"
-        :cards="socialMedia.whoWeWorkWith.cards"
+        :badge="socialMedia?.whoWeWorkWith?.badge"
+        :heading="socialMedia?.whoWeWorkWith?.heading"
+        :paragraph="socialMedia?.whoWeWorkWith?.paragraph"
+        :cards="socialMedia?.whoWeWorkWith?.cards"
     />
     <CallToAction 
-        :heading="socialMedia.callToAction.title"
-        :introduction="socialMedia.callToAction.intro"
-        :callToActionButtonText="socialMedia.callToAction.button.label"
-        :callToActionButtonURL="socialMedia.callToAction.button.link"
-        :callToActionButtonIcon="socialMedia.callToAction.button.icon"
+        :heading="socialMedia?.callToAction.title"
+        :introduction="socialMedia?.callToAction.intro"
+        :callToActionButtonText="socialMedia?.callToAction.button.label"
+        :callToActionButtonURL="socialMedia?.callToAction.button.link"
+        :callToActionButtonIcon="socialMedia?.callToAction.button.icon"
     />
  
 </template>

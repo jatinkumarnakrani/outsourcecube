@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { PropType } from 'vue'
+import type { ServiceOfferingCard } from '@/types/website'
 import Badge from '@/components/commen/Badge.vue'
 import * as LucideIcons from '@lucide/vue';
 import FloatingCube from '@/components/commen/Floatingcube.vue';
@@ -13,7 +15,7 @@ defineProps({
         required: false,
     },
     cards: {
-        type: Array,
+        type: Array as PropType<ServiceOfferingCard[]>,
         required: false,
         default: () => []
     }

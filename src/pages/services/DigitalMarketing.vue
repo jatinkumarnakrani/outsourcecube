@@ -9,50 +9,42 @@ import ProcessWithSteps from "@/pages/components/ProcessWithSteps.vue";
 import CallToAction from "@/pages/components/CallToAction.vue";
 
 const websiteStore = useWebsiteStore();
-const digitalMarketing = computed(() => websiteStore.content.pages.service.digitalMarketing);
-
-function getImagePath(name: string): string {
-  return `${import.meta.env.BASE_URL}images/${name}`
-}
-
-const whyChooseUsDetails = {
-  
-};
+const digitalMarketing = computed(() => websiteStore.content?.pages.service.digitalMarketing);
 </script>
 <template>
     <ShellHeroLegel
-        :badge="digitalMarketing.badge"
-        :title="digitalMarketing.title"
-        :intro="digitalMarketing.intro"
-        :img="{ src: getImagePath(digitalMarketing.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
+        :badge="digitalMarketing?.badge ?? ''"
+        :title="digitalMarketing?.title ?? ''"
+        :intro="digitalMarketing?.intro ?? ''"
+        :img="{ src: websiteStore.getImagePath(digitalMarketing?.bannerImg), alt: 'Illustration', class:['pe-4'], imgSectionClass:['order-first','w-1/2'] , firstDivClass:['w-1/2'] }"
     />
     <WhyItMatters 
-        :badge="digitalMarketing.whyitMatters.badge"
-        :heading="digitalMarketing.whyitMatters.heading"
-        :paragraph1="digitalMarketing.whyitMatters.paragraph1"
-        :paragraph2="digitalMarketing.whyitMatters.paragraph2"
+        :badge="digitalMarketing?.whyitMatters.badge"
+        :heading="digitalMarketing?.whyitMatters.heading"
+        :paragraph1="digitalMarketing?.whyitMatters.paragraph1"
+        :paragraph2="digitalMarketing?.whyitMatters.paragraph2"
     />
     <WhatWeOffer 
-        :badge="digitalMarketing.whatWeOffer.badge"
-        :heading="digitalMarketing.whatWeOffer.heading"
-        :cards="digitalMarketing.whatWeOffer.cards"
+        :badge="digitalMarketing?.whatWeOffer.badge"
+        :heading="digitalMarketing?.whatWeOffer.heading"
+        :cards="digitalMarketing?.whatWeOffer.cards"
     />
     <WhyChooseUs
-        :badge="digitalMarketing.whyChooseUs.badge"
-        :heading="digitalMarketing.whyChooseUs.heading"
-        :paragraph="digitalMarketing.whyChooseUs.paragraph"
-        :cards="digitalMarketing.whyChooseUs.cards"
+        :badge="digitalMarketing?.whyChooseUs.badge"
+        :heading="digitalMarketing?.whyChooseUs.heading"
+        :paragraph="digitalMarketing?.whyChooseUs.paragraph"
+        :cards="digitalMarketing?.whyChooseUs.cards"
     />
     <ProcessWithSteps 
-        :badge="digitalMarketing.processWithSteps.badge"
-        :heading="digitalMarketing.processWithSteps.heading"
-        :steps="digitalMarketing.processWithSteps.steps"
+        :badge="digitalMarketing?.processWithSteps.badge"
+        :heading="digitalMarketing?.processWithSteps.heading"
+        :steps="digitalMarketing?.processWithSteps.steps"
     />
     <CallToAction 
-        :heading="digitalMarketing.callToAction.title"
-        :introduction="digitalMarketing.callToAction.intro"
-        :callToActionButtonText="digitalMarketing.callToAction.button.label"
-        :callToActionButtonURL="digitalMarketing.callToAction.button.link"
-        :callToActionButtonIcon="digitalMarketing.callToAction.button.icon"
+        :heading="digitalMarketing?.callToAction.title"
+        :introduction="digitalMarketing?.callToAction.intro"
+        :callToActionButtonText="digitalMarketing?.callToAction.button.label"
+        :callToActionButtonURL="digitalMarketing?.callToAction.button.link"
+        :callToActionButtonIcon="digitalMarketing?.callToAction.button.icon"
     />
 </template>
